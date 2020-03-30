@@ -95,6 +95,7 @@
       .index-swiper-center-center .list .nick-name image,
       .index-swiper-center-center .list .video-time image {
         width: 24rpx;
+        height: 24rpx;
 }
 .index-swiper-center-center .list .hot text,
       .index-swiper-center-center .list .is-live text,
@@ -132,7 +133,8 @@
       text-align: left;
 }
 .index-swiper-center-center .list .room-src image {
-      width: 100%;
+      width: 350rpx;
+      height: 198rpx;
       border-radius: 10rpx;
 }
 .index-swiper-center-center .list .room-name {

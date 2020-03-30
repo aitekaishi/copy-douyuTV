@@ -90,6 +90,7 @@
 }
 .anchor .cate-list .cate-item image {
         width: 120rpx;
+        height: 120rpx;
 }
 .anchor .list-title .list {
     width: 100%;
@@ -110,6 +111,7 @@
 .anchor .list-title .list .hot image,
       .anchor .list-title .list .nick-name image {
         width: 24rpx;
+        height: 24rpx;
 }
 .anchor .list-title .list .hot text,
       .anchor .list-title .list .nick-name text {
@@ -126,7 +128,8 @@
       text-align: left;
 }
 .anchor .list-title .list .room-src image {
-      width: 100%;
+      width: 700rpx;
+      height: 396rpx;
       border-radius: 10rpx;
 }
 .anchor .list-title .list .room-classify {
@@ -218,6 +221,7 @@
 }
 .anchor .uni-grid image {
       width: 140rpx;
+      height: 140rpx;
       border-radius: 5rpx;
 }
 .anchor .uni-grid .text {
@@ -237,6 +241,7 @@
 }
 .anchor .uni-grid .is-live image {
         width: 100rpx;
+        height: 20rpx;
 }
 .spance {
   height: 40rpx;
@@ -265,6 +270,7 @@
 }
 .anchor-list .anchor-list-left image {
       width: 120rpx;
+      height: 120rpx;
       border-radius: 50%;
       margin-right: 30rpx;
 }
@@ -277,5 +283,6 @@
 }
 .anchor-list .anchor-list-right image {
     width: 120rpx;
+    height: 25rpx;
 }
 

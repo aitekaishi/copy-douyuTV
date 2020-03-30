@@ -341,7 +341,7 @@ export default {
 					border-right: 1upx dashed $uni-bg-color-main;
 					image {
 						margin-top: 50upx;
-						width: 50%;
+						@include wh(50%,50%);
 						@include borderRadius(50%);
 					}
 					.text {
@@ -374,7 +374,7 @@ export default {
 				@include flex();
 			}
 			image {
-				width: 140upx;
+				@include wh(140upx,40upx);
 			}
 			.input {
 				flex: 1;
@@ -407,7 +407,7 @@ export default {
 			}
 			.index-swiper-right {
 				image {
-					width: 15vw;
+					@include wh(15vw,15vw);
 				}
 			}
 		}
@@ -429,7 +429,7 @@ export default {
 					margin-right: 20upx;
 				}
 				image {
-					width: 35upx;
+					@include wh(35upx,35upx);
 				}
 			}
 			.index-swiper-center-title-left {
@@ -465,7 +465,7 @@ export default {
 			@include flex();
 			margin: 20upx 0;
 			image {
-				width: 35upx;
+				@include wh(35upx,30upx)
 				margin-right: 20upx;
 			}
 			text {

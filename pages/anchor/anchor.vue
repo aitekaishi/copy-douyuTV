@@ -397,7 +397,7 @@ export default {
 			text-align: center;
 			font-size: $uni-font-size-sm;
 			image {
-				width: 120upx;
+				@include wh(120upx,120upx);
 			}
 		}
 	}
@@ -411,7 +411,7 @@ export default {
 				@include relative(0, 0, 0, calc(100% - 310upx)) text-align: right;
 				@include wh(300upx, 0);
 				image {
-					width: 24upx;
+					@include wh(24upx,24upx);
 				}
 				text {
 					margin-left: 5upx;
@@ -424,7 +424,7 @@ export default {
 			}
 			.room-src {
 				image {
-					width: 100%;
+					@include wh(700upx,396upx);
 					@include borderRadius(10upx);
 				}
 			}
@@ -479,7 +479,7 @@ export default {
 		width: 33%;
 		display: inline-block;
 		image {
-			width: 140upx;
+			@include wh(140upx,140upx);
 			@include borderRadius(5upx);
 		}
 		.text {
@@ -498,7 +498,7 @@ export default {
 			@include relative(-18upx, 0, 0, calc(33% - 230upx));
 			/* #endif */
 			image {
-				width: 100upx;
+				@include wh(100upx,20upx);
 			}
 		}
 	}
@@ -514,7 +514,7 @@ export default {
 	.anchor-list-left {
 		@include flex();
 		image {
-			width: 120upx;
+			@include wh(120upx,120upx);
 			@include borderRadius(50%);
 			margin-right: 30upx;
 		}
@@ -530,7 +530,7 @@ export default {
 	}
 	.anchor-list-right {
 		image {
-			width: 120upx;
+			@include wh(120upx,25upx);
 		}
 	}
 }

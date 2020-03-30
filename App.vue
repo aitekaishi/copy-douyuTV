@@ -40,7 +40,7 @@
 					 text-align: right;
 					@include wh(300upx, 0);
 					image {
-						width: 24upx;
+						@include wh(24upx,24upx);
 					}
 					text {
 						margin-left: 5upx;
@@ -70,7 +70,7 @@
 				}
 				.room-src {
 					image {
-						width: 100%;
+						@include wh(350upx,198upx);
 						@include borderRadius(10upx);
 					}
 				}
