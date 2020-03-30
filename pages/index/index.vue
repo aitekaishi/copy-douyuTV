@@ -6,8 +6,8 @@
 					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png" mode="widthFix"></image>
 				</view>
 				<view @click="$common.navigateTo('../serach/serach')" class="input"><input type="text" v-model="serachVal" placeholder="搜索" /></view>
-				<view class="pay">充值</view>
-				<view class="open-app">打开APP</view>
+				<!-- <view class="pay">充值</view>
+				<view class="open-app">打开APP</view> -->
 			</view>
 			<view class="index-swiper">
 				<view class="index-swiper-left">
@@ -374,6 +374,7 @@ export default {
 				width: 140upx;
 			}
 			.input {
+				flex: 1;
 				background: #f2f2f2;
 				height: 60upx;
 				padding: 0 0 0 30upx;

@@ -149,6 +149,9 @@
         width: 140rpx;
 }
 .index .index-header .index-title .input.data-v-1d944dd4 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
         background: #f2f2f2;
         height: 60rpx;
         padding: 0 0 0 30rpx;

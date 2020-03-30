@@ -10588,48 +10588,52 @@ var _buzi = _interopRequireDefault(__webpack_require__(/*! ./buzi.server */ 32))
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ 33));
-var _common = _interopRequireDefault(__webpack_require__(/*! @/common/common.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+var _common = _interopRequireDefault(__webpack_require__(/*! @/common/common.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var url = 'https://m.douyu.com/';var _default =
+
+
+
 
 {
   //获取swiperList
   getSwiperList: function getSwiperList(success, fail, error) {
-    _api.default.get("https://m.douyu.com/api/cate/recList?cid=&ct=", 'application/json', null, success, fail, error);
+    _api.default.get("".concat(url, "/api/cate/recList?cid=&ct="), 'application/json', null, success, fail, error);
   },
   //获取推荐分类
   getRecommendList: function getRecommendList(success, fail, error) {
-    _api.default.get("https://m.douyu.com/api/home/mix", 'application/json', null, success, fail, error);
+    _api.default.get("".concat(url, "/api/home/mix"), 'application/json', null, success, fail, error);
   },
   //获取分类详情
   getListDetail: function getListDetail(listParams, success, fail, error) {
-    _api.default.get("https://m.douyu.com/api/room/list".concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
+    _api.default.get("".concat(url, "/api/room/list").concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
   },
   //获取热门搜索列表
   getTodayTop: function getTodayTop(success, fail, error) {
-    _api.default.get("https://m.douyu.com/api/search/getTodayTop?count=10&isAjax=1", 'application/json', null, success, fail, error);
+    _api.default.get("".concat(url, "/api/search/getTodayTop?count=10&isAjax=1"), 'application/json', null, success, fail, error);
   },
   //搜索全部
   getMulti: function getMulti(body, success, fail, error) {
-    _api.default.post("https://m.douyu.com/api/search/multi", 'application/json', body, success, fail, error);
+    _api.default.post("".concat(url, "/api/search/multi"), 'application/json', body, success, fail, error);
   },
   //搜索主播
   getAnchor: function getAnchor(body, success, fail, error) {
-    _api.default.post("https://m.douyu.com/api/search/anchor", 'application/json', body, success, fail, error);
+    _api.default.post("".concat(url, "/api/search/anchor"), 'application/json', body, success, fail, error);
   },
   //搜索直播间
   getLiveRoom: function getLiveRoom(body, success, fail, error) {
-    _api.default.post("https://m.douyu.com/api/search/liveRoom", 'application/json', body, success, fail, error);
+    _api.default.post("".concat(url, "/api/search/liveRoom"), 'application/json', body, success, fail, error);
   },
   //搜索视频
   getVideo: function getVideo(body, success, fail, error) {
-    _api.default.post("https://m.douyu.com/api/search/video", 'application/json', body, success, fail, error);
+    _api.default.post("".concat(url, "/api/search/video"), 'application/json', body, success, fail, error);
   },
   //搜索分类列表
   getCateList: function getCateList(success, fail, error) {
-    _api.default.get("https://m.douyu.com/api/cate/list", 'application/json', null, success, fail, error);
+    _api.default.get("".concat(url, "/api/cate/list"), 'application/json', null, success, fail, error);
   },
   //直播接口
   getLive: function getLive(body, success, fail, error) {
-    _api.default.post("https://m.douyu.com/api/room/ratestream", 'application/x-www-form-urlencoded', body, success, fail, error);
+    _api.default.post("".concat(url, "/api/room/ratestream"), 'application/x-www-form-urlencoded', body, success, fail, error);
   } };exports.default = _default;
 
 /***/ }),

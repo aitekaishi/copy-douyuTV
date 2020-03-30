@@ -68,6 +68,20 @@
             }
         }
     },
+	"h5" : {
+	        "devServer" : {
+	            "port" : 8080,
+	            "disableHostCheck" : true,
+	            "proxy" : {
+	                "/api" : {
+	                    "target" : "https://m.douyu.com/",
+	                    "changeOrigin" : true,
+	                    "secure" : false,
+						"pathRewrite":{"^/api":""}
+	                }
+	            }
+	        }
+	    },
     "mp-alipay" : {
         "usingComponents" : true
     },
