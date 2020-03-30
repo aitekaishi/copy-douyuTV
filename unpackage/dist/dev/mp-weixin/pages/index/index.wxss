@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.index.data-v-1d944dd4 {
+  padding: 10rpx;
+}
+.index .popup-center.data-v-1d944dd4 {
+    background: #CCC;
+}
+.index .popup-center .popup-title.data-v-1d944dd4 {
+      display: -webkit-box;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      background: #fff;
+}
+.index .popup-center .popup-title view.data-v-1d944dd4:nth-of-type(1) {
+        z-index: 10;
+}
+.index .popup-center .popup-title view.data-v-1d944dd4:nth-of-type(2) {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
+        text-align: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -30rpx;
+}
+.index .popup-center .popup-tab.data-v-1d944dd4 {
+      background: #fff;
+}
+.index .popup-center .popup-swiper.data-v-1d944dd4 {
+      background: #fff;
+      max-height: 70vh;
+      overflow-y: scroll;
+}
+.index .popup-center .popup-swiper .uni-grid.data-v-1d944dd4 {
+        background: #f8f8f8;
+}
+.index .popup-center .popup-swiper .uni-grid .uni-grid-item.data-v-1d944dd4 {
+          text-align: center;
+          width: 33vw;
+          height: 33vw;
+          display: inline-block;
+          border-bottom: 1rpx dashed #CCC;
+          border-right: 1rpx dashed #CCC;
+}
+.index .popup-center .popup-swiper .uni-grid .uni-grid-item image.data-v-1d944dd4 {
+            margin-top: 50rpx;
+            width: 50%;
+            border-radius: 50%;
+}
+.index .popup-center .popup-swiper .uni-grid .uni-grid-item .text.data-v-1d944dd4 {
+            font-size: 24rpx;
+            margin-bottom: 20rpx;
+}
+.index .popup-center .popup-swiper .uni-grid .uni-grid-item-end.data-v-1d944dd4 {
+          border-right: none;
+}
+.index .index-header.data-v-1d944dd4 {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+}
+.index .index-header .index-title.data-v-1d944dd4 {
+      padding: 10rpx;
+      display: -webkit-box;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      height: 70rpx;
+      font-size: 24rpx;
+      margin-bottom: 40rpx;
+}
+.index .index-header .index-title view.data-v-1d944dd4 {
+        margin: 0 10rpx;
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+}
+.index .index-header .index-title image.data-v-1d944dd4 {
+        width: 140rpx;
+}
+.index .index-header .index-title .input.data-v-1d944dd4 {
+        background: #f2f2f2;
+        height: 60rpx;
+        padding: 0 0 0 30rpx;
+        border-radius: 50rpx;
+}
+.index .index-header .index-title .pay.data-v-1d944dd4,
+      .index .index-header .index-title .open-app.data-v-1d944dd4 {
+        border-radius: 50rpx;
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        height: 50rpx;
+}
+.index .index-header .index-title .pay.data-v-1d944dd4 {
+        width: 15vw;
+        border: 1rpx solid #c8c7cc;
+}
+.index .index-header .index-title .open-app.data-v-1d944dd4 {
+        width: 20vw;
+        color: #fff;
+        background: #FF5D23;
+}
+.index .index-header .index-swiper.data-v-1d944dd4 {
+      display: -webkit-box;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.index .index-header .index-swiper .index-swiper-left.data-v-1d944dd4 {
+        width: 85vw;
+}
+.index .index-header .index-swiper .index-swiper-right image.data-v-1d944dd4 {
+        width: 15vw;
+}
+.index .space.data-v-1d944dd4 {
+    height: 230rpx;
+}
+.index .index-swiper-center .index-swiper-center-title.data-v-1d944dd4 {
+    margin: 10rpx 0;
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left.data-v-1d944dd4,
+    .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right.data-v-1d944dd4 {
+      display: -webkit-box;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left view.data-v-1d944dd4,
+      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right view.data-v-1d944dd4 {
+        margin-right: 20rpx;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left image.data-v-1d944dd4,
+      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right image.data-v-1d944dd4 {
+        width: 35rpx;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left view.data-v-1d944dd4:nth-of-type(2) {
+      position: relative;
+      top: -5rpx;
+      right: auto;
+      bottom: auto;
+      left: auto;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left view.data-v-1d944dd4:nth-of-type(3) {
+      position: relative;
+      top: -3rpx;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      font-size: 24rpx;
+      color: #FF5D23;
+      border: 1rpx solid #FF5D23;
+      border-radius: 50rpx;
+      padding: 0 10rpx;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right view.data-v-1d944dd4:nth-of-type(1) {
+      position: relative;
+      top: -3rpx;
+      right: -20rpx;
+      bottom: auto;
+      left: auto;
+      font-size: 24rpx;
+      color: #c0c0c0;
+}
+.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right view.data-v-1d944dd4:nth-of-type(2) {
+      display: inline-block;
+      margin-right: 0;
+      background-repeat: no-repeat;
+      background-image: url("https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png");
+      background-position: -88rpx 0;
+      width: 60rpx;
+      height: 60rpx;
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+}
+.index .index-swiper-center .no-first-title.data-v-1d944dd4 {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 20rpx 0;
+}
+.index .index-swiper-center .no-first-title image.data-v-1d944dd4 {
+      width: 35rpx;
+      margin-right: 20rpx;
+}
+.index .index-swiper-center .no-first-title text.data-v-1d944dd4 {
+      font-size: 28rpx;
+}
+.index .back-top.data-v-1d944dd4 {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.index .back-top view.data-v-1d944dd4 {
+      display: inline-block;
+      margin-right: 0;
+      background-repeat: no-repeat;
+      background-image: url("https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png");
+      background-position: -790rpx 0;
+      width: 60rpx;
+      height: 60rpx;
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+}
+.index .download-app.data-v-1d944dd4 {
+    background-color: #FF5D23;
+    width: 80vw;
+    margin: 30rpx auto;
+    padding: 20rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+    border-radius: 6rpx;
+}
+.index .footer.data-v-1d944dd4 {
+    text-align: center;
+    font-size: 24rpx;
+    color: #c0c0c0;
+}
+

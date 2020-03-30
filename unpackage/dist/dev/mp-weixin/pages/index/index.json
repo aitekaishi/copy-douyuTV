@@ -1,0 +1,12 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "s-tabs": "/components/s-tabs/index",
+    "s-tab": "/components/s-tab/index",
+    "uni-grid": "/components/uni-grid/uni-grid",
+    "uni-grid-item": "/components/uni-grid-item/uni-grid-item"
+  }
+}
