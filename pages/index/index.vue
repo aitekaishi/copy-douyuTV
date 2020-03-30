@@ -358,6 +358,9 @@ export default {
 	.index-header {
 		position: fixed;
 		top: 0;
+		/* #ifndef MP-WEIXIN */
+		padding-top: 60upx;
+		/* #endif */
 		background: #fff;
 		z-index: 100;
 		.index-title {
@@ -398,6 +401,7 @@ export default {
 		}
 		.index-swiper {
 			@include flex();
+			@include relative(-50upx);
 			.index-swiper-left {
 				width: 85vw;
 			}
@@ -410,6 +414,9 @@ export default {
 	}
 	.space {
 		height: 230upx;
+		/* #ifndef MP-WEIXIN */
+		height: 290upx;
+		/* #endif */
 	}
 	.index-swiper-center {
 		.index-swiper-center-title {

@@ -37,10 +37,10 @@
             "style" : {
             	"enablePullDownRefresh": true,
             	"onReachBottomDistance": 50,
-            	"app-plus": {
-            		"titleNView": false, //禁用原生导航栏
-            		"softinputNavBar": "none"
-            	}
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"softinputNavBar": "none"
+				}
             }
         }
     ],

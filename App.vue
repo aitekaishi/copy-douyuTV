@@ -15,6 +15,9 @@
 <style lang="scss">
 	/*每个页面公共css */
 @import './uni.scss';
+.H5{
+	height: 100upx;
+	}
 .line{
 	@include wh(100vw,2upx);
 	margin: 10upx auto;
@@ -30,6 +33,10 @@
 				.is-live,
 				.nick-name,.video-time{
 					@include relative(-10upx, 0, 0, calc(47vw - 310upx));
+					/* #ifndef MP-WEIXIN */
+					@include relative(-20upx, 0, 0, calc(47vw - 310upx));
+					/* #endif */
+					z-index: 10;
 					 text-align: right;
 					@include wh(300upx, 0);
 					image {
@@ -41,7 +48,13 @@
 					}
 				}
 				.is-live{
-					@include relative(-10upx, 0, 0, calc(47vw - 552upx));
+					@include relative(-10upx, 0, 0, calc(47vw - 555upx));
+					/* #ifdef APP-PLUS */
+					@include relative(-15upx, 0, 0, calc(47vw - 555upx));
+					/* #endif */
+					/* #ifdef H5 */
+					@include relative(-17upx, 0, 0, calc(47vw - 555upx));
+					/* #endif */
 					image {
 						width: 100upx;
 					}

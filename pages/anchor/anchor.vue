@@ -1,6 +1,8 @@
 <template>
 	<view class="anchor">
+		<!-- #ifdef MP-WEIXIN -->
 		<serach-input @serachName="serachName()"></serach-input>
+		<!-- #endif -->
 		<view class="weui-tab">
 			<view class="weui-navbar">
 				<block v-for="(item, index) in tabs" :key="index">
@@ -68,8 +70,8 @@
 								<view></view>
 							</view>
 						</view>
-						<uni-grid :column="4" :show-border="false" :square="false">
-							<uni-grid-item class="uni-grid" v-for="(item, index) in multiData.anchor" :key="index">
+						<view>
+							<view class="uni-grid" v-for="(item, index) in multiData.anchor" :key="index">
 								<view v-if="!item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
 									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
 								</view>
@@ -78,8 +80,8 @@
 								</view>
 								<view class="img"><image :src="item.avatar" mode="widthFix"></image></view>
 								<view class="text">{{ item.nickname }}</view>
-							</uni-grid-item>
-						</uni-grid>
+							</view>
+						</view>
 					</view>
 					<view>
 						<view class="more">
@@ -235,16 +237,12 @@
 </template>
 
 <script>
-import uniGrid from '@/components/uni-grid/uni-grid.vue';
-import uniGridItem from '@/components/uni-grid-item/uni-grid-item.vue';
 import { buziAPI } from '@/api';
 import serachInput from '@/components/serach-input/serach-input';
 import mixins from '@/mixins/myMixins';
 export default {
 	components: {
-		serachInput,
-		uniGrid,
-		uniGridItem
+		serachInput
 	},
 	data() {
 		return {
@@ -374,9 +372,16 @@ export default {
 		position: fixed;
 		top: 70upx;
 		border-bottom: none;
-		background: #fff;
+		background: #FFF;
+		z-index: 1000;
+		/* #ifndef MP-WEIXIN */
+		padding-top: 70upx;
+		top: 0;
+		width: 100vw;
+		/* #endif */
 	}
 	.tab-item {
+		display: inline-block;
 		margin: 10upx 20upx;
 	}
 	.actived {
@@ -471,6 +476,8 @@ export default {
 	}
 	.uni-grid {
 		text-align: center;
+		width: 33%;
+		display: inline-block;
 		image {
 			width: 140upx;
 			@include borderRadius(5upx);
@@ -481,8 +488,15 @@ export default {
 		}
 		.is-live {
 			text-align: right;
+			z-index: 10;
 			@include wh(300upx, 0);
-			@include relative(-10upx, 0, 0, calc(47vw - 552upx));
+			@include relative(-10upx, 0, 0, calc(33% - 230upx));
+			/* #ifdef H5 */
+			@include relative(-20upx, 0, 0, calc(33% - 230upx));
+			/* #endif */
+			/* #ifdef APP-PLUS */
+			@include relative(-18upx, 0, 0, calc(33% - 230upx));
+			/* #endif */
 			image {
 				width: 100upx;
 			}
@@ -491,6 +505,9 @@ export default {
 }
 .spance {
 	height: 40upx;
+	/* #ifdef APP-PLUS */
+	height: 160upx;
+	/* #endif */
 }
 .anchor-list {
 	@include flex(space-between);

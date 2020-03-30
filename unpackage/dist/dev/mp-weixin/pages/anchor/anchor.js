@@ -97,11 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   "serach-input": () =>
-    __webpack_require__.e(/*! import() | components/serach-input/serach-input */ "components/serach-input/serach-input").then(__webpack_require__.bind(null, /*! @/components/serach-input/serach-input.vue */ 102)),
-  "uni-grid": () =>
-    __webpack_require__.e(/*! import() | components/uni-grid/uni-grid */ "components/uni-grid/uni-grid").then(__webpack_require__.bind(null, /*! @/components/uni-grid/uni-grid.vue */ 88)),
-  "uni-grid-item": () =>
-    __webpack_require__.e(/*! import() | components/uni-grid-item/uni-grid-item */ "components/uni-grid-item/uni-grid-item").then(__webpack_require__.bind(null, /*! @/components/uni-grid-item/uni-grid-item.vue */ 95))
+    __webpack_require__.e(/*! import() | components/serach-input/serach-input */ "components/serach-input/serach-input").then(__webpack_require__.bind(null, /*! @/components/serach-input/serach-input.vue */ 102))
 }
 var render = function() {
   var _vm = this
@@ -408,12 +404,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var _api = __webpack_require__(/*! @/api */ 31);
 
-var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins */ 34));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var uniGrid = function uniGrid() {return __webpack_require__.e(/*! import() | components/uni-grid/uni-grid */ "components/uni-grid/uni-grid").then(__webpack_require__.bind(null, /*! @/components/uni-grid/uni-grid.vue */ 88));};var uniGridItem = function uniGridItem() {return __webpack_require__.e(/*! import() | components/uni-grid-item/uni-grid-item */ "components/uni-grid-item/uni-grid-item").then(__webpack_require__.bind(null, /*! @/components/uni-grid-item/uni-grid-item.vue */ 95));};var serachInput = function serachInput() {return __webpack_require__.e(/*! import() | components/serach-input/serach-input */ "components/serach-input/serach-input").then(__webpack_require__.bind(null, /*! @/components/serach-input/serach-input */ 102));};var _default =
+var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins */ 34));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var serachInput = function serachInput() {return __webpack_require__.e(/*! import() | components/serach-input/serach-input */ "components/serach-input/serach-input").then(__webpack_require__.bind(null, /*! @/components/serach-input/serach-input */ 102));};var _default =
 {
   components: {
-    serachInput: serachInput,
-    uniGrid: uniGrid,
-    uniGridItem: uniGridItem },
+    serachInput: serachInput },
 
   data: function data() {
     return {

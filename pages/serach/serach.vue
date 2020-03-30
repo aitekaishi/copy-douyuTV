@@ -2,7 +2,7 @@
 	<view class="serach">
 		<serach-input @serachName='serachName()'></serach-input>
 		<view class="serach-center">
-			<view class="title">æœè¿‘çƒ­æ</view>
+			<view class="title">½üÆÚÈÈËÑ</view>
 			<view class="list">
 				<view class="list-left">
 					<view class="list-view" v-for="(item, index) in todayTopListTop" @click="serachName(item)" :key="index">
@@ -54,6 +54,9 @@ export default {
 @import '../../uni.scss';
 .serach {
 	padding: 20upx;
+	/* #ifndef MP-WEIXIN */
+	padding-top: 60upx;
+	/* #endif */
 	.serach-center{
 		margin-top: 60upx;
 	}
@@ -69,6 +72,7 @@ export default {
 			flex: 1;
 			.list-view {
 				margin: 0 0 30upx 0;
+				font-size: $uni-font-size-base;
 				@include flex();
 				view:nth-of-type(1) {
 					font-size: $uni-font-size-sm;

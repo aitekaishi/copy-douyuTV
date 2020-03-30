@@ -56,9 +56,11 @@
     position: fixed;
     top: 70rpx;
     border-bottom: none;
-    background: #fff;
+    background: #FFF;
+    z-index: 1000;
 }
 .anchor .tab-item {
+    display: inline-block;
     margin: 10rpx 20rpx;
 }
 .anchor .actived {
@@ -211,6 +213,8 @@
 }
 .anchor .uni-grid {
     text-align: center;
+    width: 33%;
+    display: inline-block;
 }
 .anchor .uni-grid image {
       width: 140rpx;
@@ -222,13 +226,14 @@
 }
 .anchor .uni-grid .is-live {
       text-align: right;
+      z-index: 10;
       width: 300rpx;
       height: 0;
       position: relative;
       top: -10rpx;
       right: 0;
       bottom: 0;
-      left: calc(47vw - 552rpx);
+      left: calc(33% - 230rpx);
 }
 .anchor .uni-grid .is-live image {
         width: 100rpx;

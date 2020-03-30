@@ -190,6 +190,11 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
               align-items: center;
+      position: relative;
+      top: -50rpx;
+      right: auto;
+      bottom: auto;
+      left: auto;
 }
 .index .index-header .index-swiper .index-swiper-left.data-v-1d944dd4 {
         width: 85vw;

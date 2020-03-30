@@ -50,6 +50,9 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.H5 {
+  height: 100rpx;
+}
 .line {
   width: 100vw;
   height: 2rpx;
@@ -82,6 +85,7 @@
       right: 0;
       bottom: 0;
       left: calc(47vw - 310rpx);
+      z-index: 10;
       text-align: right;
       width: 300rpx;
       height: 0;
@@ -105,7 +109,7 @@
       top: -10rpx;
       right: 0;
       bottom: 0;
-      left: calc(47vw - 552rpx);
+      left: calc(47vw - 555rpx);
 }
 .index-swiper-center-center .list .is-live image {
         width: 100rpx;

@@ -49,8 +49,9 @@
     -webkit-flex: 1;
             flex: 1;
 }
-.serach-title view.data-v-65a5700c:nth-of-type(2) {
+.serach-title .serach-click.data-v-65a5700c {
     width: 70rpx;
     margin-left: 20rpx;
+    font-size: 28rpx !important;
 }
 

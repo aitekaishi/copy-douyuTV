@@ -80,6 +80,7 @@
 .serach .list .list-left .list-view.data-v-8da922a0,
       .serach .list .list-right .list-view.data-v-8da922a0 {
         margin: 0 0 30rpx 0;
+        font-size: 28rpx;
         display: -webkit-box;
         display: flex;
         display: -webkit-flex;
