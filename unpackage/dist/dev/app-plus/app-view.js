@@ -241,6 +241,7 @@ var render = function() {
                 [
                   _c("v-uni-image", {
                     attrs: {
+                      "lazy-load": true,
                       src:
                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png",
                       mode: "widthFix",
@@ -332,6 +333,7 @@ var render = function() {
                 [
                   _c("v-uni-image", {
                     attrs: {
+                      "lazy-load": true,
                       src:
                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png",
                       mode: "widthFix",
@@ -378,6 +380,7 @@ var render = function() {
                               [
                                 _c("v-uni-image", {
                                   attrs: {
+                                    "lazy-load": true,
                                     src: _vm._$g("20-" + $31, "a-src"),
                                     mode: "widthFix",
                                     _i: "20-" + $31
@@ -463,6 +466,7 @@ var render = function() {
                               [
                                 _c("v-uni-image", {
                                   attrs: {
+                                    "lazy-load": true,
                                     src:
                                       "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png",
                                     mode: "widthFix",
@@ -493,6 +497,7 @@ var render = function() {
                               [
                                 _c("v-uni-image", {
                                   attrs: {
+                                    "lazy-load": true,
                                     src: _vm._$g(
                                       "32-" + $31 + "-" + $32,
                                       "a-src"
@@ -516,6 +521,7 @@ var render = function() {
                               [
                                 _c("v-uni-image", {
                                   attrs: {
+                                    "lazy-load": true,
                                     src:
                                       "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png",
                                     mode: "widthFix",
@@ -626,6 +632,7 @@ var render = function() {
                     [
                       _c("v-uni-image", {
                         attrs: {
+                          "lazy-load": true,
                           src:
                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon_play_e54a507.png",
                           mode: "widthFix",
@@ -664,6 +671,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src:
                                     "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png",
                                   mode: "widthFix",
@@ -685,6 +693,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src: _vm._$g("55-" + $33, "a-src"),
                                   mode: "widthFix",
                                   _i: "55-" + $33
@@ -702,6 +711,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src:
                                     "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png",
                                   mode: "widthFix",
@@ -735,6 +745,7 @@ var render = function() {
                         [
                           _c("v-uni-image", {
                             attrs: {
+                              "lazy-load": true,
                               src:
                                 "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif",
                               mode: "widthFix",
@@ -794,6 +805,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src:
                                     "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif",
                                   mode: "widthFix",
@@ -875,8 +887,8 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src: _vm._$g("77-" + $35, "a-src"),
-                                  "lazy-load": "true",
                                   mode: "widthFix",
                                   _i: "77-" + $35
                                 }
@@ -3028,7 +3040,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../mySoftWare/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.index[data-v-1d944dd4] {\n  padding: 10upx;\n}\n.index .popup-center[data-v-1d944dd4] {\n    background: #CCC;\n}\n.index .popup-center .popup-title[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: center;\n      -webkit-justify-content: center;\n              justify-content: center;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      background: #fff;\n}\n.index .popup-center .popup-title uni-view[data-v-1d944dd4]:nth-of-type(1) {\n        z-index: 10;\n}\n.index .popup-center .popup-title uni-view[data-v-1d944dd4]:nth-of-type(2) {\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n                flex: 1;\n        text-align: center;\n        position: relative;\n        top: 0;\n        right: 0;\n        bottom: 0;\n        left: -30upx;\n}\n.index .popup-center .popup-tab[data-v-1d944dd4] {\n      background: #fff;\n}\n.index .popup-center .popup-swiper[data-v-1d944dd4] {\n      background: #fff;\n      max-height: 70vh;\n      overflow-y: scroll;\n}\n.index .popup-center .popup-swiper .uni-grid[data-v-1d944dd4] {\n        background: #f8f8f8;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item[data-v-1d944dd4] {\n          text-align: center;\n          width: 33vw;\n          height: 33vw;\n          display: inline-block;\n          border-bottom: 1upx dashed #CCC;\n          border-right: 1upx dashed #CCC;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item uni-image[data-v-1d944dd4] {\n            margin-top: 50upx;\n            width: 50%;\n            border-radius: 50%;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item .text[data-v-1d944dd4] {\n            font-size: 24rpx;\n            margin-bottom: 20upx;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item-end[data-v-1d944dd4] {\n          border-right: none;\n}\n.index .index-header[data-v-1d944dd4] {\n    position: fixed;\n    top: 0;\n    padding-top: 60upx;\n    background: #fff;\n    z-index: 100;\n}\n.index .index-header .index-title[data-v-1d944dd4] {\n      padding: 10upx;\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      height: 70upx;\n      font-size: 24rpx;\n      margin-bottom: 40upx;\n}\n.index .index-header .index-title uni-view[data-v-1d944dd4] {\n        margin: 0 10upx;\n        display: -webkit-box;\n        display: flex;\n        display: -webkit-flex;\n        -webkit-box-pack: start;\n        -webkit-justify-content: flex-start;\n                justify-content: flex-start;\n        -webkit-box-align: center;\n        -webkit-align-items: center;\n                align-items: center;\n}\n.index .index-header .index-title uni-image[data-v-1d944dd4] {\n        width: 140upx;\n}\n.index .index-header .index-title .input[data-v-1d944dd4] {\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n                flex: 1;\n        background: #f2f2f2;\n        height: 60upx;\n        padding: 0 0 0 30upx;\n        border-radius: 50upx;\n}\n.index .index-header .index-title .pay[data-v-1d944dd4],\n      .index .index-header .index-title .open-app[data-v-1d944dd4] {\n        border-radius: 50upx;\n        display: -webkit-box;\n        display: flex;\n        display: -webkit-flex;\n        -webkit-box-pack: center;\n        -webkit-justify-content: center;\n                justify-content: center;\n        -webkit-box-align: center;\n        -webkit-align-items: center;\n                align-items: center;\n        height: 50upx;\n}\n.index .index-header .index-title .pay[data-v-1d944dd4] {\n        width: 15vw;\n        border: 1upx solid #c8c7cc;\n}\n.index .index-header .index-title .open-app[data-v-1d944dd4] {\n        width: 20vw;\n        color: #fff;\n        background: #FF5D23;\n}\n.index .index-header .index-swiper[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      position: relative;\n      top: -50upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n}\n.index .index-header .index-swiper .index-swiper-left[data-v-1d944dd4] {\n        width: 85vw;\n}\n.index .index-header .index-swiper .index-swiper-right uni-image[data-v-1d944dd4] {\n        width: 15vw;\n}\n.index .space[data-v-1d944dd4] {\n    height: 230upx;\n    height: 290upx;\n}\n.index .index-swiper-center .index-swiper-center-title[data-v-1d944dd4] {\n    margin: 10upx 0;\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: justify;\n    -webkit-justify-content: space-between;\n            justify-content: space-between;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left[data-v-1d944dd4],\n    .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4],\n      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4] {\n        margin-right: 20upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-image[data-v-1d944dd4],\n      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-image[data-v-1d944dd4] {\n        width: 35upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4]:nth-of-type(2) {\n      position: relative;\n      top: -5upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4]:nth-of-type(3) {\n      position: relative;\n      top: -3upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #FF5D23;\n      border: 1upx solid #FF5D23;\n      border-radius: 50upx;\n      padding: 0 10upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4]:nth-of-type(1) {\n      position: relative;\n      top: -3upx;\n      right: -20upx;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4]:nth-of-type(2) {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -88upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.index .index-swiper-center .no-first-title[data-v-1d944dd4] {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n    margin: 20upx 0;\n}\n.index .index-swiper-center .no-first-title uni-image[data-v-1d944dd4] {\n      width: 35upx;\n      margin-right: 20upx;\n}\n.index .index-swiper-center .no-first-title uni-text[data-v-1d944dd4] {\n      font-size: 28rpx;\n}\n.index .back-top[data-v-1d944dd4] {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.index .back-top uni-view[data-v-1d944dd4] {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -790upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.index .download-app[data-v-1d944dd4] {\n    background-color: #FF5D23;\n    width: 80vw;\n    margin: 30upx auto;\n    padding: 20upx;\n    text-align: center;\n    font-size: 28rpx;\n    color: #fff;\n    border-radius: 6rpx;\n}\n.index .footer[data-v-1d944dd4] {\n    text-align: center;\n    font-size: 24rpx;\n    color: #c0c0c0;\n}\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.index[data-v-1d944dd4] {\n  padding: 10upx;\n}\n.index .popup-center[data-v-1d944dd4] {\n    background: #fff;\n    padding-top: 110upx;\n}\n.index .popup-center .popup-title[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: center;\n      -webkit-justify-content: center;\n              justify-content: center;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      background: #fff;\n}\n.index .popup-center .popup-title uni-view[data-v-1d944dd4]:nth-of-type(1) {\n        z-index: 10;\n}\n.index .popup-center .popup-title uni-view[data-v-1d944dd4]:nth-of-type(2) {\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n                flex: 1;\n        text-align: center;\n        position: relative;\n        top: 0;\n        right: 0;\n        bottom: 0;\n        left: -30upx;\n}\n.index .popup-center .popup-tab[data-v-1d944dd4] {\n      background: #fff;\n}\n.index .popup-center .popup-swiper[data-v-1d944dd4] {\n      background: #fff;\n      max-height: 70vh;\n      overflow-y: scroll;\n}\n.index .popup-center .popup-swiper .uni-grid[data-v-1d944dd4] {\n        background: #f8f8f8;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item[data-v-1d944dd4] {\n          text-align: center;\n          width: 33vw;\n          height: 33vw;\n          display: inline-block;\n          border-bottom: 1upx dashed #CCC;\n          border-right: 1upx dashed #CCC;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item uni-image[data-v-1d944dd4] {\n            margin-top: 50upx;\n            width: 50%;\n            height: 50%;\n            border-radius: 50%;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item .text[data-v-1d944dd4] {\n            font-size: 24rpx;\n            margin-bottom: 20upx;\n}\n.index .popup-center .popup-swiper .uni-grid .uni-grid-item-end[data-v-1d944dd4] {\n          border-right: none;\n}\n.index .index-header[data-v-1d944dd4] {\n    position: fixed;\n    top: 0;\n    padding-top: 60upx;\n    background: #fff;\n    z-index: 100;\n}\n.index .index-header .index-title[data-v-1d944dd4] {\n      padding: 10upx;\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      height: 70upx;\n      font-size: 24rpx;\n      margin-bottom: 40upx;\n}\n.index .index-header .index-title uni-view[data-v-1d944dd4] {\n        margin: 0 10upx;\n        display: -webkit-box;\n        display: flex;\n        display: -webkit-flex;\n        -webkit-box-pack: start;\n        -webkit-justify-content: flex-start;\n                justify-content: flex-start;\n        -webkit-box-align: center;\n        -webkit-align-items: center;\n                align-items: center;\n}\n.index .index-header .index-title uni-image[data-v-1d944dd4] {\n        width: 140upx;\n        height: 80upx;\n}\n.index .index-header .index-title .input[data-v-1d944dd4] {\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n                flex: 1;\n        background: #f2f2f2;\n        height: 60upx;\n        padding: 0 30upx;\n        margin-right: 30upx;\n        border-radius: 50upx;\n}\n.index .index-header .index-title .pay[data-v-1d944dd4],\n      .index .index-header .index-title .open-app[data-v-1d944dd4] {\n        border-radius: 50upx;\n        display: -webkit-box;\n        display: flex;\n        display: -webkit-flex;\n        -webkit-box-pack: center;\n        -webkit-justify-content: center;\n                justify-content: center;\n        -webkit-box-align: center;\n        -webkit-align-items: center;\n                align-items: center;\n        height: 50upx;\n}\n.index .index-header .index-title .pay[data-v-1d944dd4] {\n        width: 15vw;\n        border: 1upx solid #c8c7cc;\n}\n.index .index-header .index-title .open-app[data-v-1d944dd4] {\n        width: 20vw;\n        color: #fff;\n        background: #FF5D23;\n}\n.index .index-header .index-swiper[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      position: relative;\n      top: -50upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n}\n.index .index-header .index-swiper .index-swiper-left[data-v-1d944dd4] {\n        width: 85vw;\n}\n.index .index-header .index-swiper .index-swiper-right uni-image[data-v-1d944dd4] {\n        width: 15vw;\n        height: 15vw;\n}\n.index .space[data-v-1d944dd4] {\n    height: 230upx;\n    height: 290upx;\n}\n.index .index-swiper-center .index-swiper-center-title[data-v-1d944dd4] {\n    margin: 10upx 0;\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: justify;\n    -webkit-justify-content: space-between;\n            justify-content: space-between;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left[data-v-1d944dd4],\n    .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right[data-v-1d944dd4] {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4],\n      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4] {\n        margin-right: 20upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-image[data-v-1d944dd4],\n      .index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-image[data-v-1d944dd4] {\n        width: 35upx;\n        height: 35upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4]:nth-of-type(2) {\n      position: relative;\n      top: -5upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-left uni-view[data-v-1d944dd4]:nth-of-type(3) {\n      position: relative;\n      top: -3upx;\n      right: auto;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #FF5D23;\n      border: 1upx solid #FF5D23;\n      border-radius: 50upx;\n      padding: 0 10upx;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4]:nth-of-type(1) {\n      position: relative;\n      top: -3upx;\n      right: -20upx;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.index .index-swiper-center .index-swiper-center-title .index-swiper-center-title-right uni-view[data-v-1d944dd4]:nth-of-type(2) {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -88upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.index .index-swiper-center .no-first-title[data-v-1d944dd4] {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n    margin: 20upx 0;\n}\n.index .index-swiper-center .no-first-title uni-image[data-v-1d944dd4] {\n      width: 35upx;\n      height: 30upx;\n      margin-right: 20upx;\n}\n.index .index-swiper-center .no-first-title uni-text[data-v-1d944dd4] {\n      font-size: 28rpx;\n}\n.index .back-top[data-v-1d944dd4] {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.index .back-top uni-view[data-v-1d944dd4] {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -790upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.index .download-app[data-v-1d944dd4] {\n    background-color: #FF5D23;\n    width: 80vw;\n    margin: 30upx auto;\n    padding: 20upx;\n    text-align: center;\n    font-size: 28rpx;\n    color: #fff;\n    border-radius: 6rpx;\n}\n.index .footer[data-v-1d944dd4] {\n    text-align: center;\n    font-size: 24rpx;\n    color: #c0c0c0;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -3195,6 +3207,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png",
                                       mode: "widthFix",
@@ -3221,6 +3234,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src: _vm._$g(15, "a-src"),
                                       mode: "widthFix",
                                       _i: 15
@@ -3238,6 +3252,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png",
                                       mode: "widthFix",
@@ -3367,6 +3382,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src: _vm._$g("32-" + $31, "a-src"),
                                       mode: "widthFix",
                                       _i: "32-" + $31
@@ -3454,6 +3470,7 @@ var render = function() {
                                     [
                                       _c("v-uni-image", {
                                         attrs: {
+                                          "lazy-load": true,
                                           src:
                                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png",
                                           mode: "widthFix",
@@ -3475,6 +3492,7 @@ var render = function() {
                                     [
                                       _c("v-uni-image", {
                                         attrs: {
+                                          "lazy-load": true,
                                           src:
                                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png",
                                           mode: "widthFix",
@@ -3494,6 +3512,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src: _vm._$g("49-" + $32, "a-src"),
                                       mode: "widthFix",
                                       _i: "49-" + $32
@@ -3591,6 +3610,7 @@ var render = function() {
                                     [
                                       _c("v-uni-image", {
                                         attrs: {
+                                          "lazy-load": true,
                                           src:
                                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png",
                                           mode: "widthFix",
@@ -3612,6 +3632,7 @@ var render = function() {
                                     [
                                       _c("v-uni-image", {
                                         attrs: {
+                                          "lazy-load": true,
                                           src:
                                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png",
                                           mode: "widthFix",
@@ -3631,6 +3652,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png",
                                       mode: "widthFix",
@@ -3654,6 +3676,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src: _vm._$g("69-" + $33, "a-src"),
                                       mode: "widthFix",
                                       _i: "69-" + $33
@@ -3671,6 +3694,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png",
                                       mode: "widthFix",
@@ -3772,6 +3796,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src: _vm._$g("85-" + $34, "a-src"),
                                       mode: "widthFix",
                                       _i: "85-" + $34
@@ -3876,6 +3901,7 @@ var render = function() {
                                   [
                                     _c("v-uni-image", {
                                       attrs: {
+                                        "lazy-load": true,
                                         src: _vm._$g("98-" + $35, "a-src"),
                                         mode: "widthFix",
                                         _i: "98-" + $35
@@ -3922,6 +3948,7 @@ var render = function() {
                                   [
                                     _c("v-uni-image", {
                                       attrs: {
+                                        "lazy-load": true,
                                         src:
                                           "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/belive_7e2b0eb.png",
                                         mode: "widthFix",
@@ -3981,6 +4008,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png",
                                       mode: "widthFix",
@@ -4002,6 +4030,7 @@ var render = function() {
                                 [
                                   _c("v-uni-image", {
                                     attrs: {
+                                      "lazy-load": true,
                                       src:
                                         "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png",
                                       mode: "widthFix",
@@ -4021,6 +4050,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src:
                                     "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png",
                                   mode: "widthFix",
@@ -4044,6 +4074,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src: _vm._$g("116-" + $36, "a-src"),
                                   mode: "widthFix",
                                   _i: "116-" + $36
@@ -4061,6 +4092,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src:
                                     "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png",
                                   mode: "widthFix",
@@ -4125,6 +4157,7 @@ var render = function() {
                             [
                               _c("v-uni-image", {
                                 attrs: {
+                                  "lazy-load": true,
                                   src: _vm._$g("125-" + $37, "a-src"),
                                   mode: "widthFix",
                                   _i: "125-" + $37
@@ -4197,6 +4230,7 @@ var render = function() {
                     [
                       _c("v-uni-image", {
                         attrs: {
+                          "lazy-load": true,
                           src:
                             "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif",
                           mode: "widthFix",
@@ -4537,7 +4571,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../mySoftWare/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.anchor {\n  padding: 20upx;\n}\n.anchor .weui-navbar {\n    position: fixed;\n    top: 70upx;\n    border-bottom: none;\n    background: #FFF;\n    z-index: 1000;\n    padding-top: 70upx;\n    top: 0;\n    width: 100vw;\n}\n.anchor .tab-item {\n    display: inline-block;\n    margin: 10upx 20upx;\n}\n.anchor .actived {\n    color: #FF5D23;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    font-weight: 600;\n}\n.anchor .cate-list {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n    -webkit-flex-wrap: wrap;\n            flex-wrap: wrap;\n}\n.anchor .cate-list .cate-item {\n      width: 150upx;\n      height: 200upx;\n      text-align: center;\n      font-size: 24rpx;\n}\n.anchor .cate-list .cate-item uni-image {\n        width: 120upx;\n}\n.anchor .list-title .list {\n    width: 100%;\n    margin-bottom: 10upx;\n}\n.anchor .list-title .list .hot,\n    .anchor .list-title .list .nick-name {\n      position: relative;\n      position: relative;\n      top: 0;\n      right: 0;\n      bottom: 0;\n      left: calc(100% - 310upx);\n      text-align: right;\n      width: 300upx;\n      height: 0;\n}\n.anchor .list-title .list .hot uni-image,\n      .anchor .list-title .list .nick-name uni-image {\n        width: 24upx;\n}\n.anchor .list-title .list .hot uni-text,\n      .anchor .list-title .list .nick-name uni-text {\n        margin-left: 5upx;\n        font-size: 24rpx;\n        color: #fff;\n}\n.anchor .list-title .list .nick-name {\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 10upx;\n      text-align: left;\n}\n.anchor .list-title .list .room-src uni-image {\n      width: 100%;\n      border-radius: 10upx;\n}\n.anchor .list-title .list .room-classify {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: justify;\n      -webkit-justify-content: space-between;\n              justify-content: space-between;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      font-size: 28rpx;\n      color: #000;\n}\n.anchor .list-title .list .room-classify .room-name {\n        width: 55%;\n        display: -webkit-box;\n        height: 40upx;\n        -webkit-box-orient: vertical;\n        -webkit-line-clamp: 1;\n        overflow: hidden;\n}\n.anchor .list-title .list .room-classify .classify uni-text {\n        color: #FF5D23;\n}\n.anchor .list-title .list .vip-id {\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.anchor .more {\n    margin: 10upx 0;\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: justify;\n    -webkit-justify-content: space-between;\n            justify-content: space-between;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.anchor .more .left,\n    .anchor .more .right {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n}\n.anchor .more .left uni-view,\n      .anchor .more .right uni-view {\n        margin-right: 20upx;\n}\n.anchor .more .left uni-view:nth-of-type(1) {\n      width: 8upx;\n      height: 35upx;\n      background: #FF5D23;\n      border-radius: 5upx;\n}\n.anchor .more .right uni-view:nth-of-type(1) {\n      position: relative;\n      top: -3upx;\n      right: -20upx;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.anchor .more .right uni-view:nth-of-type(2) {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -88upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.anchor .uni-grid {\n    text-align: center;\n    width: 33%;\n    display: inline-block;\n}\n.anchor .uni-grid uni-image {\n      width: 140upx;\n      border-radius: 5upx;\n}\n.anchor .uni-grid .text {\n      font-size: 24rpx;\n      margin-bottom: 20upx;\n}\n.anchor .uni-grid .is-live {\n      text-align: right;\n      z-index: 10;\n      width: 300upx;\n      height: 0;\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(33% - 230upx);\n      position: relative;\n      top: -18upx;\n      right: 0;\n      bottom: 0;\n      left: calc(33% - 230upx);\n}\n.anchor .uni-grid .is-live uni-image {\n        width: 100upx;\n}\n.spance {\n  height: 40upx;\n  height: 160upx;\n}\n.anchor-list {\n  display: -webkit-box;\n  display: flex;\n  display: -webkit-flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n}\n.anchor-list .anchor-list-left {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.anchor-list .anchor-list-left uni-image {\n      width: 120upx;\n      border-radius: 50%;\n      margin-right: 30upx;\n}\n.anchor-list .anchor-list-left .name uni-view:nth-of-type(1),\n    .anchor-list .anchor-list-left .name uni-view:nth-of-type(2) {\n      font-size: 28rpx;\n}\n.anchor-list .anchor-list-left .name uni-view:nth-of-type(2) {\n      color: #CCC;\n}\n.anchor-list .anchor-list-right uni-image {\n    width: 120upx;\n}\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.anchor {\n  padding: 20upx;\n}\n.anchor .weui-navbar {\n    position: fixed;\n    top: 70upx;\n    border-bottom: none;\n    background: #fff;\n    z-index: 1000;\n    padding-top: 70upx;\n    top: 0;\n    width: 100vw;\n}\n.anchor .tab-item {\n    display: inline-block;\n    margin: 10upx 20upx;\n}\n.anchor .actived {\n    color: #FF5D23;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    font-weight: 600;\n}\n.anchor .cate-list {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n    -webkit-flex-wrap: wrap;\n            flex-wrap: wrap;\n}\n.anchor .cate-list .cate-item {\n      width: 150upx;\n      height: 200upx;\n      text-align: center;\n      font-size: 24rpx;\n}\n.anchor .cate-list .cate-item uni-image {\n        width: 120upx;\n        height: 120upx;\n}\n.anchor .list-title .list {\n    width: 100%;\n    margin-bottom: 10upx;\n}\n.anchor .list-title .list .hot,\n    .anchor .list-title .list .nick-name {\n      position: relative;\n      position: relative;\n      top: 0;\n      right: 0;\n      bottom: 0;\n      left: calc(100% - 310upx);\n      text-align: right;\n      width: 300upx;\n      height: 0;\n}\n.anchor .list-title .list .hot uni-image,\n      .anchor .list-title .list .nick-name uni-image {\n        width: 24upx;\n        height: 24upx;\n}\n.anchor .list-title .list .hot uni-text,\n      .anchor .list-title .list .nick-name uni-text {\n        margin-left: 5upx;\n        font-size: 24rpx;\n        color: #fff;\n}\n.anchor .list-title .list .nick-name {\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 10upx;\n      text-align: left;\n}\n.anchor .list-title .list .room-src uni-image {\n      width: 700upx;\n      height: 396upx;\n      border-radius: 10upx;\n}\n.anchor .list-title .list .room-classify {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: justify;\n      -webkit-justify-content: space-between;\n              justify-content: space-between;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n      font-size: 28rpx;\n      color: #000;\n}\n.anchor .list-title .list .room-classify .room-name {\n        width: 55%;\n        display: -webkit-box;\n        height: 40upx;\n        -webkit-box-orient: vertical;\n        -webkit-line-clamp: 1;\n        overflow: hidden;\n}\n.anchor .list-title .list .room-classify .classify uni-text {\n        color: #FF5D23;\n}\n.anchor .list-title .list .vip-id {\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.anchor .more {\n    margin: 10upx 0;\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: justify;\n    -webkit-justify-content: space-between;\n            justify-content: space-between;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.anchor .more .left,\n    .anchor .more .right {\n      display: -webkit-box;\n      display: flex;\n      display: -webkit-flex;\n      -webkit-box-pack: start;\n      -webkit-justify-content: flex-start;\n              justify-content: flex-start;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n              align-items: center;\n}\n.anchor .more .left uni-view,\n      .anchor .more .right uni-view {\n        margin-right: 20upx;\n}\n.anchor .more .left uni-view:nth-of-type(1) {\n      width: 8upx;\n      height: 35upx;\n      background: #FF5D23;\n      border-radius: 5upx;\n}\n.anchor .more .right uni-view:nth-of-type(1) {\n      position: relative;\n      top: -3upx;\n      right: -20upx;\n      bottom: auto;\n      left: auto;\n      font-size: 24rpx;\n      color: #c0c0c0;\n}\n.anchor .more .right uni-view:nth-of-type(2) {\n      display: inline-block;\n      margin-right: 0;\n      background-repeat: no-repeat;\n      background-image: url(\"https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon-v2_ed53f03.png\");\n      background-position: -88upx 0;\n      width: 60upx;\n      height: 60upx;\n      -webkit-transform: scale(0.7);\n              transform: scale(0.7);\n}\n.anchor .uni-grid {\n    text-align: center;\n    width: 33%;\n    display: inline-block;\n}\n.anchor .uni-grid uni-image {\n      width: 140upx;\n      height: 140upx;\n      border-radius: 5upx;\n}\n.anchor .uni-grid .text {\n      font-size: 24rpx;\n      margin-bottom: 20upx;\n}\n.anchor .uni-grid .is-live {\n      text-align: right;\n      z-index: 10;\n      width: 300upx;\n      height: 0;\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(33% - 230upx);\n      position: relative;\n      top: -18upx;\n      right: 0;\n      bottom: 0;\n      left: calc(33% - 230upx);\n}\n.anchor .uni-grid .is-live uni-image {\n        width: 100upx;\n        height: 20upx;\n}\n.spance {\n  height: 40upx;\n  height: 160upx;\n}\n.anchor-list {\n  display: -webkit-box;\n  display: flex;\n  display: -webkit-flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n}\n.anchor-list .anchor-list-left {\n    display: -webkit-box;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-box-pack: start;\n    -webkit-justify-content: flex-start;\n            justify-content: flex-start;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n            align-items: center;\n}\n.anchor-list .anchor-list-left uni-image {\n      width: 120upx;\n      height: 120upx;\n      border-radius: 50%;\n      margin-right: 30upx;\n}\n.anchor-list .anchor-list-left .name uni-view:nth-of-type(1),\n    .anchor-list .anchor-list-left .name uni-view:nth-of-type(2) {\n      font-size: 28rpx;\n}\n.anchor-list .anchor-list-left .name uni-view:nth-of-type(2) {\n      color: #CCC;\n}\n.anchor-list .anchor-list-right uni-image {\n    width: 120upx;\n    height: 25upx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4645,7 +4679,7 @@ var render = function() {
           _c(
             "v-uni-view",
             { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
-            [_vm._v("��������")]
+            [_vm._v("近期热搜")]
           ),
           _c(
             "v-uni-view",
@@ -4998,7 +5032,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../mySoftWare/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/*每个页面公共css */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.H5 {\n  height: 100upx;\n}\n.line {\n  width: 100vw;\n  height: 2upx;\n  margin: 10upx auto;\n  background: #CCC;\n}\n.index-swiper-center-center {\n  display: -webkit-box;\n  display: flex;\n  display: -webkit-flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n.index-swiper-center-center .list {\n    width: 47vw;\n    margin-bottom: 10upx;\n}\n.index-swiper-center-center .list .hot,\n    .index-swiper-center-center .list .is-live,\n    .index-swiper-center-center .list .nick-name,\n    .index-swiper-center-center .list .video-time {\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 310upx);\n      position: relative;\n      top: -20upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 310upx);\n      z-index: 10;\n      text-align: right;\n      width: 300upx;\n      height: 0;\n}\n.index-swiper-center-center .list .hot uni-image,\n      .index-swiper-center-center .list .is-live uni-image,\n      .index-swiper-center-center .list .nick-name uni-image,\n      .index-swiper-center-center .list .video-time uni-image {\n        width: 24upx;\n}\n.index-swiper-center-center .list .hot uni-text,\n      .index-swiper-center-center .list .is-live uni-text,\n      .index-swiper-center-center .list .nick-name uni-text,\n      .index-swiper-center-center .list .video-time uni-text {\n        margin-left: 5upx;\n        font-size: 24rpx;\n        color: #fff;\n}\n.index-swiper-center-center .list .is-live {\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 555upx);\n      position: relative;\n      top: -15upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 555upx);\n}\n.index-swiper-center-center .list .is-live uni-image {\n        width: 100upx;\n}\n.index-swiper-center-center .list .video-time {\n      width: 320upx;\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 20upx;\n      text-align: right;\n}\n.index-swiper-center-center .list .nick-name {\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 10upx;\n      text-align: left;\n}\n.index-swiper-center-center .list .room-src uni-image {\n      width: 100%;\n      border-radius: 10upx;\n}\n.index-swiper-center-center .list .room-name {\n      font-size: 24rpx;\n      color: #000;\n      display: -webkit-box;\n      height: 40upx;\n      -webkit-box-orient: vertical;\n      -webkit-line-clamp: 1;\n      overflow: hidden;\n}\n.loading-more {\n  text-align: center;\n}\n.loading-more uni-image {\n    width: 70upx;\n}\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n/*每个页面公共css */\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.H5 {\n  height: 100upx;\n}\n.line {\n  width: 100vw;\n  height: 2upx;\n  margin: 10upx auto;\n  background: #CCC;\n}\n.index-swiper-center-center {\n  display: -webkit-box;\n  display: flex;\n  display: -webkit-flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-flex-wrap: wrap;\n          flex-wrap: wrap;\n}\n.index-swiper-center-center .list {\n    width: 47vw;\n    margin-bottom: 10upx;\n}\n.index-swiper-center-center .list .hot,\n    .index-swiper-center-center .list .is-live,\n    .index-swiper-center-center .list .nick-name,\n    .index-swiper-center-center .list .video-time {\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 310upx);\n      position: relative;\n      top: -20upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 310upx);\n      z-index: 10;\n      text-align: right;\n      width: 300upx;\n      height: 0;\n}\n.index-swiper-center-center .list .hot uni-image,\n      .index-swiper-center-center .list .is-live uni-image,\n      .index-swiper-center-center .list .nick-name uni-image,\n      .index-swiper-center-center .list .video-time uni-image {\n        width: 24upx;\n        height: 24upx;\n}\n.index-swiper-center-center .list .hot uni-text,\n      .index-swiper-center-center .list .is-live uni-text,\n      .index-swiper-center-center .list .nick-name uni-text,\n      .index-swiper-center-center .list .video-time uni-text {\n        margin-left: 5upx;\n        font-size: 24rpx;\n        color: #fff;\n}\n.index-swiper-center-center .list .is-live {\n      position: relative;\n      top: -10upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 555upx);\n      position: relative;\n      top: -15upx;\n      right: 0;\n      bottom: 0;\n      left: calc(47vw - 555upx);\n}\n.index-swiper-center-center .list .is-live uni-image {\n        width: 100upx;\n}\n.index-swiper-center-center .list .video-time {\n      width: 320upx;\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 20upx;\n      text-align: right;\n}\n.index-swiper-center-center .list .nick-name {\n      position: relative;\n      top: -60upx;\n      right: 0;\n      bottom: 0;\n      left: 10upx;\n      text-align: left;\n}\n.index-swiper-center-center .list .room-src uni-image {\n      width: 350upx;\n      height: 197upx;\n      border-radius: 10upx;\n}\n.index-swiper-center-center .list .room-name {\n      font-size: 24rpx;\n      color: #000;\n      display: -webkit-box;\n      height: 40upx;\n      -webkit-box-orient: vertical;\n      -webkit-line-clamp: 1;\n      overflow: hidden;\n}\n.loading-more {\n  text-align: center;\n}\n.loading-more uni-image {\n    width: 70upx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

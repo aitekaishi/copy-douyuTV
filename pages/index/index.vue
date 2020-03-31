@@ -3,9 +3,9 @@
 		<view class="index-header">
 			<view class="index-title">
 				<view @click="$common.navigateTo('../index/index')" class="img">
-					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png" mode="widthFix"></image>
+					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png" mode="widthFix"></image>
 				</view>
-				<view @click="$common.navigateTo('../serach/serach')" class="input"><input type="text" v-model="serachVal" placeholder="搜索" /></view>
+				<view @click="toSerach()" class="input"><input type="text" v-model="serachVal" placeholder="搜索" /></view>
 				<!-- <view class="pay">充值</view>
 				<view class="open-app">打开APP</view> -->
 			</view>
@@ -17,7 +17,7 @@
 					</s-tabs>
 				</view>
 				<view @click="catePopup" class="index-swiper-right">
-					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png" mode="widthFix"></image>
+					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png" mode="widthFix"></image>
 				</view>
 			</view>
 		</view>
@@ -26,7 +26,7 @@
 			<view v-if="activeTab == 0" v-for="(item, index) in recommendList" :key="index">
 				<view class="index-swiper-center-title">
 					<view class="index-swiper-center-title-left">
-						<view><image :src="item.icon" mode="widthFix"></image></view>
+						<view><image lazy-load :src="item.icon" mode="widthFix"></image></view>
 						<view>{{ item.tabName }}</view>
 						<view @click="checkTab(item)">{{ item.tabName }}</view>
 					</view>
@@ -38,19 +38,12 @@
 				<view class="index-swiper-center-center">
 					<view class="list" v-for="(subItem, subIndex) in item.list" @click="toVideo(subItem)" :key="subIndex">
 						<view class="hot">
-							<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
+							<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
 							<text>{{ subItem.hn }}</text>
 						</view>
-						<view class="room-src">
-							<image
-								:src="
-									subItem.roomSrc ? subItem.roomSrc : 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
-								"
-								mode="widthFix"
-							></image>
-						</view>
+						<view class="room-src"><image lazy-load :src="subItem.roomSrc" mode="widthFix"></image></view>
 						<view class="nick-name">
-							<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
+							<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
 							<text>{{ subItem.nickname }}</text>
 						</view>
 						<view class="room-name">{{ subItem.roomName }}</view>
@@ -70,30 +63,25 @@
 			</view>
 			<view v-if="activeTab != 0">
 				<view class="no-first-title">
-					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon_play_e54a507.png" mode="widthFix"></image>
+					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon_play_e54a507.png" mode="widthFix"></image>
 					<text>{{ name }}</text>
 				</view>
 				<view class="index-swiper-center-center">
 					<view class="list" v-for="(item, index) in otherList" @click="toVideo(item)" :key="index">
 						<view class="hot">
-							<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
+							<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
 							<text>{{ item.hn }}</text>
 						</view>
-						<view class="room-src">
-							<image
-								:src="item.roomSrc ? item.roomSrc : 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'"
-								mode="widthFix"
-							></image>
-						</view>
+						<view class="room-src"><image lazy-load :src="item.roomSrc" mode="widthFix"></image></view>
 						<view class="nick-name">
-							<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
+							<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
 							<text>{{ item.nickname }}</text>
 						</view>
 						<view class="room-name">{{ item.roomName }}</view>
 					</view>
 				</view>
 				<view v-if="loading" class="loading-more">
-					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
+					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
 				</view>
 			</view>
 			<uni-popup ref="popup" type="top">
@@ -104,7 +92,7 @@
 					</view>
 					<view class="popup-tab">
 						<view v-if="popupLoading" class="loading-more">
-							<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
+							<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
 						</view>
 						<s-tabs effect activeColor="#FF5D23" lineColor="#FF5D23" v-model="popupActiveTab" slot-title>
 							<s-tab v-if="!popupLoading">全部</s-tab>
@@ -120,7 +108,7 @@
 								@click="toIndexClick(item)"
 								:key="index"
 							>
-								<image :src="item.icon" lazy-load="true" mode="widthFix"></image>
+								<image lazy-load :src="item.icon" mode="widthFix"></image>
 								<view class="text">{{ item.cate2Name }}</view>
 							</view>
 						</view>
@@ -167,9 +155,7 @@ export default {
 		uniGridItem
 	},
 	watch: {
-		activeTab(newVal, oldVal) {
-			
-		}
+		activeTab(newVal, oldVal) {}
 	},
 	mixins: [mixins],
 	async onLoad(options) {
@@ -186,6 +172,11 @@ export default {
 				}
 			}
 		}
+	},
+	onPullDownRefresh() {
+		setTimeout(function() {
+			uni.stopPullDownRefresh();
+		}, 1000);
 	},
 	//上拉加载更多
 	async onReachBottom() {
@@ -214,6 +205,22 @@ export default {
 			let that = this;
 			buziAPI.getRecommendList(res => {
 				that.recommendList = res.data;
+				for (let i = 0; i < that.recommendList.length; i++) {
+					for (let j = 0; j < that.recommendList[i].list.length; j++) {
+						let src = that.recommendList[i].list[j].roomSrc;
+						// #ifdef H5
+						src = that.recommendList[i].list[j].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
+						// #endif
+						that.recommendList[i].list[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+						uni.request({
+							url: src,
+							responseType: 'arraybuffer',
+							success: res => {
+								that.recommendList[i].list[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+							}
+						});
+					}
+				}
 			});
 		},
 		//获取分类详情
@@ -223,6 +230,21 @@ export default {
 				buziAPI.getListDetail({ page, type }, res => {
 					that.otherList = [...that.otherList, ...res.data.list];
 					that.pageCount = res.data.pageCount;
+					for (let j = (page - 1) * 8; j < that.otherList.length; j++) {
+						let src = that.otherList[j].roomSrc;
+						console.log(that.otherList[j].roomSrc);
+						// #ifdef H5
+						src = that.otherList[j].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
+						// #endif
+						that.otherList[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+						uni.request({
+							url: src,
+							responseType: 'arraybuffer',
+							success: res => {
+								that.otherList[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+							}
+						});
+					}
 					resolve();
 				});
 			});
@@ -297,9 +319,13 @@ export default {
 			this.getListDetail(this.index, this.shortName);
 			this.$refs.popup.close();
 		},
-		downloadApp(){
-			this.$localstorageFactory.set('download',true)
-			this.$common.navigateTo('../video/video')
+		downloadApp() {
+			this.$localstorageFactory.set('download', true);
+			this.$common.navigateTo('../video/video');
+		},
+		toSerach(){
+			this.$common.navigateTo('../serach/serach')
+			this.$localstorageFactory.remove('serach_val')
 		}
 	}
 };
@@ -310,7 +336,10 @@ export default {
 .index {
 	padding: 10upx;
 	.popup-center {
-		background: $uni-bg-color-main;
+		background: #fff;
+		/* #ifndef MP-WEIXIN */
+		padding-top: 110upx;
+		/* #endif */
 		.popup-title {
 			@include flex(center);
 			background: #fff;
@@ -341,7 +370,7 @@ export default {
 					border-right: 1upx dashed $uni-bg-color-main;
 					image {
 						margin-top: 50upx;
-						@include wh(50%,50%);
+						@include wh(50%, 50%);
 						@include borderRadius(50%);
 					}
 					.text {
@@ -374,13 +403,14 @@ export default {
 				@include flex();
 			}
 			image {
-				@include wh(140upx,40upx);
+				@include wh(140upx, 80upx);
 			}
 			.input {
 				flex: 1;
 				background: #f2f2f2;
 				height: 60upx;
-				padding: 0 0 0 30upx;
+				padding: 0 30upx;
+				margin-right: 30upx;
 				@include borderRadius(50upx);
 			}
 			.pay,
@@ -407,7 +437,7 @@ export default {
 			}
 			.index-swiper-right {
 				image {
-					@include wh(15vw,15vw);
+					@include wh(15vw, 15vw);
 				}
 			}
 		}
@@ -429,7 +459,7 @@ export default {
 					margin-right: 20upx;
 				}
 				image {
-					@include wh(35upx,35upx);
+					@include wh(35upx, 35upx);
 				}
 			}
 			.index-swiper-center-title-left {
@@ -465,8 +495,7 @@ export default {
 			@include flex();
 			margin: 20upx 0;
 			image {
-				@include wh(35upx,30upx)
-				margin-right: 20upx;
+				@include wh(35upx, 30upx) margin-right: 20upx;
 			}
 			text {
 				font-size: $uni-font-size-base;

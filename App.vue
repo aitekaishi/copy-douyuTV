@@ -70,7 +70,7 @@
 				}
 				.room-src {
 					image {
-						@include wh(350upx,198upx);
+						@include wh(350upx,197upx);
 						@include borderRadius(10upx);
 					}
 				}

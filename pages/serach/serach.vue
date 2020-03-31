@@ -2,7 +2,7 @@
 	<view class="serach">
 		<serach-input @serachName='serachName()'></serach-input>
 		<view class="serach-center">
-			<view class="title">½üÆÚÈÈËÑ</view>
+			<view class="title">è¿‘æœŸçƒ­æœ</view>
 			<view class="list">
 				<view class="list-left">
 					<view class="list-view" v-for="(item, index) in todayTopListTop" @click="serachName(item)" :key="index">

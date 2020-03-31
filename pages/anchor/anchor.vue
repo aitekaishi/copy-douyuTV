@@ -17,21 +17,12 @@
 					<view class="list-title">
 						<view v-if="multiData.anchor[0].official && !multiData.cate.length" class="list">
 							<view class="hot">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
 								<text>{{ multiData.anchor[0].hn }}</text>
 							</view>
-							<view class="room-src" @click="toVideo(multiData.anchor[0].roomId)">
-								<image
-									:src="
-										multiData.anchor[0].roomSrc
-											? multiData.anchor[0].roomSrc
-											: 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
-									"
-									mode="widthFix"
-								></image>
-							</view>
+							<view class="room-src" @click="toVideo(multiData.anchor[0].roomId)"><image lazy-load :src="multiData.anchor[0].roomSrc" mode="widthFix"></image></view>
 							<view class="nick-name">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
 								<text>{{ multiData.anchor[0].nickname }}</text>
 							</view>
 							<view class="room-classify">
@@ -54,7 +45,7 @@
 						</view>
 						<view class="cate-list">
 							<view class="cate-item" v-for="(item, index) in multiData.cate" @click="toIndex(item)" :key="index">
-								<image :src="item.smallIconUrl" mode="widthFix"></image>
+								<image lazy-load :src="item.smallIconUrl" mode="widthFix"></image>
 								<view>{{ item.tagName }}</view>
 							</view>
 						</view>
@@ -73,12 +64,12 @@
 						<view>
 							<view class="uni-grid" v-for="(item, index) in multiData.anchor" :key="index">
 								<view v-if="!item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
 								</view>
 								<view v-if="item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
 								</view>
-								<view class="img"><image :src="item.avatar" mode="widthFix"></image></view>
+								<view class="img"><image lazy-load :src="item.avatar" mode="widthFix"></image></view>
 								<view class="text">{{ item.nickname }}</view>
 							</view>
 						</view>
@@ -97,25 +88,24 @@
 						<view class="index-swiper-center-center">
 							<view class="list" v-for="(item, index) in multiData.room" @click="toVideo(item)" :key="index">
 								<view v-if="!item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
 								</view>
 								<view v-if="item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
 								</view>
 								<view class="hot">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
 									<text>{{ item.hn }}</text>
 								</view>
 								<view class="room-src">
 									<image
-										:src="
-											item.roomSrc ? item.roomSrc : 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
-										"
+										lazy-load
+										:src="item.roomSrc"
 										mode="widthFix"
 									></image>
 								</view>
 								<view class="nick-name">
-									<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
+									<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
 									<text>{{ item.nickname }}</text>
 								</view>
 								<view class="room-name">{{ item.roomName }}</view>
@@ -137,11 +127,8 @@
 							<view class="list" v-for="(item, index) in multiData.video" @click="toVideo(item)" :key="index">
 								<view class="room-src">
 									<image
-										:src="
-											item.videoPic
-												? item.videoPic
-												: 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
-										"
+										lazy-load
+										:src="item.videoPic"
 										mode="widthFix"
 									></image>
 								</view>
@@ -163,14 +150,14 @@
 					<view v-for="(item, index) in anchorData" :key="index">
 						<view class="anchor-list">
 							<view class="anchor-list-left">
-								<view><image :src="item.avatar" mode="widthFix"></image></view>
+								<view><image lazy-load :src="item.avatar" mode="widthFix"></image></view>
 								<view class="name">
 									<view>{{ item.nickname }}</view>
 									<view>热度：{{ item.hn }}</view>
 								</view>
 							</view>
 							<view v-if="item.isLive" class="anchor-list-right">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/belive_7e2b0eb.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/belive_7e2b0eb.png" mode="widthFix"></image>
 							</view>
 						</view>
 						<view class="line"></view>
@@ -180,23 +167,24 @@
 					<view class="index-swiper-center-center">
 						<view class="list" v-for="(item, index) in liveRoomData" @click="toVideo(item)" :key="index">
 							<view v-if="!item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/playing_9f3b01a.png" mode="widthFix"></image>
 							</view>
 							<view v-if="item.isVertical" :style="{ opacity: item.isLive }" class="is-live">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/e-playing_ade1373.png" mode="widthFix"></image>
 							</view>
 							<view class="hot">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/hotnum_6b05e5d.png" mode="widthFix"></image>
 								<text>{{ item.hn }}</text>
 							</view>
 							<view class="room-src">
 								<image
-									:src="item.roomSrc ? item.roomSrc : 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'"
+									lazy-load
+									:src="item.roomSrc"
 									mode="widthFix"
 								></image>
 							</view>
 							<view class="nick-name">
-								<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
+								<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/iconfont-wo_fdcada2.png" mode="widthFix"></image>
 								<text>{{ item.nickname }}</text>
 							</view>
 							<view class="room-name">{{ item.roomName }}</view>
@@ -208,10 +196,9 @@
 						<view class="list" v-for="(item, index) in videoData" @click="toVideo(item)" :key="index">
 							<view class="room-src">
 								<image
+									lazy-load
 									:src="
-										item.videoPic
-											? item.videoPic
-											: 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
+										item.videoPic ? item.videoPic : 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png'
 									"
 									mode="widthFix"
 								></image>
@@ -229,7 +216,7 @@
 					</view>
 				</view>
 				<view v-if="loading" class="loading-more">
-					<image src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
+					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/loading_9015c6d.gif" mode="widthFix"></image>
 				</view>
 			</view>
 		</view>
@@ -249,14 +236,14 @@ export default {
 			multiData: {}, //全部数据
 			anchorData: [], //主播数据
 			liveRoomData: [], //直播间数据
-			videoData:[],//视频数据
+			videoData: [], //视频数据
 			tabs: ['全部', '主播', '直播', '视频'],
 			activeIndex: 0
 		};
 	},
 	mixins: [mixins],
 	onLoad(options) {
-		this.$localstorageFactory.set('sk',options.name)
+		this.$localstorageFactory.set('sk', options.name);
 		this.activeIndex = this.$localstorageFactory.get('activeIndex');
 		this.tabClick(this.activeIndex);
 	},
@@ -288,10 +275,10 @@ export default {
 	},
 	methods: {
 		//返回对应的首页
-		toIndex(item){
+		toIndex(item) {
 			uni.navigateTo({
-				url:'../index/index?shortName='+item.shortName
-			})
+				url: '../index/index?shortName=' + item.shortName
+			});
 		},
 		//Tab切换
 		tabClick(index) {
@@ -322,6 +309,46 @@ export default {
 			let that = this;
 			buziAPI.getMulti({ sk: that.$localstorageFactory.get('sk'), offset: 0, limit: 10, did: '534849629102e84fb8321a5700031531' }, res => {
 				that.multiData = res.data;
+				let src = that.multiData.anchor[0].roomSrc;
+				// #ifdef H5
+				src = that.multiData.anchor[0].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
+				// #endif
+				that.multiData.anchor[0].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+				uni.request({
+					url: src,
+					responseType: 'arraybuffer',
+					success: res => {
+						that.multiData.anchor[0].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+					}
+				});
+				for (let j = 0; j < that.multiData.room.length; j++) {
+					let src = that.multiData.room[j].roomSrc;
+					// #ifdef H5
+					src = that.multiData.room[j].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
+					// #endif
+					that.multiData.room[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+					uni.request({
+						url: src,
+						responseType: 'arraybuffer',
+						success: res => {
+							that.multiData.room[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+						}
+					});
+				}
+				for (let j = 0; j < that.multiData.video.length; j++) {
+					let src = that.multiData.video[j].videoPic;
+					// #ifdef H5
+					src = that.multiData.video[j].videoPic.replace('https://rpic.douyucdn.cn/', '/rpic/');
+					// #endif
+					that.multiData.video[j].videoPic = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+					uni.request({
+						url: src,
+						responseType: 'arraybuffer',
+						success: res => {
+							that.multiData.video[j].videoPic = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+						}
+					});
+				}
 			});
 		},
 		//activeIndex=1 搜索主播
@@ -330,7 +357,7 @@ export default {
 			return new Promise(function(resolve, reject) {
 				buziAPI.getAnchor({ sk: that.$localstorageFactory.get('sk'), offset, limit, did: '534849629102e84fb8321a5700031531' }, res => {
 					that.anchorData = [...that.anchorData, ...res.data.list];
-					resolve()
+					resolve();
 				});
 			});
 		},
@@ -343,7 +370,7 @@ export default {
 					if (res.data.list.length < 20) {
 						that.loading = false;
 					}
-					resolve()
+					resolve();
 				});
 			});
 		},
@@ -356,10 +383,10 @@ export default {
 					if (res.data.list.length < 20) {
 						that.loading = false;
 					}
-					resolve()
+					resolve();
 				});
 			});
-		},
+		}
 	}
 };
 </script>
@@ -372,7 +399,7 @@ export default {
 		position: fixed;
 		top: 70upx;
 		border-bottom: none;
-		background: #FFF;
+		background: #fff;
 		z-index: 1000;
 		/* #ifndef MP-WEIXIN */
 		padding-top: 70upx;
@@ -397,7 +424,7 @@ export default {
 			text-align: center;
 			font-size: $uni-font-size-sm;
 			image {
-				@include wh(120upx,120upx);
+				@include wh(120upx, 120upx);
 			}
 		}
 	}
@@ -411,7 +438,7 @@ export default {
 				@include relative(0, 0, 0, calc(100% - 310upx)) text-align: right;
 				@include wh(300upx, 0);
 				image {
-					@include wh(24upx,24upx);
+					@include wh(24upx, 24upx);
 				}
 				text {
 					margin-left: 5upx;
@@ -424,7 +451,7 @@ export default {
 			}
 			.room-src {
 				image {
-					@include wh(700upx,396upx);
+					@include wh(700upx, 396upx);
 					@include borderRadius(10upx);
 				}
 			}
@@ -479,7 +506,7 @@ export default {
 		width: 33%;
 		display: inline-block;
 		image {
-			@include wh(140upx,140upx);
+			@include wh(140upx, 140upx);
 			@include borderRadius(5upx);
 		}
 		.text {
@@ -498,7 +525,7 @@ export default {
 			@include relative(-18upx, 0, 0, calc(33% - 230upx));
 			/* #endif */
 			image {
-				@include wh(100upx,20upx);
+				@include wh(100upx, 20upx);
 			}
 		}
 	}
@@ -514,7 +541,7 @@ export default {
 	.anchor-list-left {
 		@include flex();
 		image {
-			@include wh(120upx,120upx);
+			@include wh(120upx, 120upx);
 			@include borderRadius(50%);
 			margin-right: 30upx;
 		}
@@ -530,7 +557,7 @@ export default {
 	}
 	.anchor-list-right {
 		image {
-			@include wh(120upx,25upx);
+			@include wh(120upx, 25upx);
 		}
 	}
 }

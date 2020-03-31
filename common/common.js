@@ -1,15 +1,15 @@
 export default {
 	isEmpty: value => {
-	  return value === null || value === undefined || value === ''
+		return value === null || value === undefined || value === ''
 	},
 	json2url: obj => {
-	  let arr = []
-	  for (let key in obj) {
-	    if (obj[key]) {
-	      arr.push(key + '=' + encodeURI(obj[key]))
-	    }
-	  }
-	  return (arr.length ? '?' : '') + arr.join('&')
+		let arr = []
+		for (let key in obj) {
+			if (obj[key]) {
+				arr.push(key + '=' + encodeURI(obj[key]))
+			}
+		}
+		return (arr.length ? '?' : '') + arr.join('&')
 	},
 	//路由跳转
 	navigateTo: url => {
@@ -18,9 +18,9 @@ export default {
 		})
 	},
 	//返回上一级
-	navigateBack:()=>{
+	navigateBack: () => {
 		uni.navigateBack({
-			delta:1
+			delta: 1
 		})
 	},
 	//Tab跳转
@@ -45,5 +45,6 @@ export default {
 				3600 - minutes * 60 : '0' + (Math.floor(newDate / 1000) - hours * 3600 - minutes * 60);
 			time = `${hours}:${minutes}:${seconds}`;
 		}, 1000);
-	}
+	},
+	
 }

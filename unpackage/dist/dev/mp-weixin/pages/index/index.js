@@ -111,10 +111,6 @@ var render = function() {
     }
 
     _vm.e1 = function($event) {
-      return _vm.$common.navigateTo("../serach/serach")
-    }
-
-    _vm.e2 = function($event) {
       return _vm.$refs.popup.close()
     }
   }
@@ -273,18 +269,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 var _api = __webpack_require__(/*! @/api */ 31);
 
 
@@ -320,9 +304,7 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
     uniGridItem: uniGridItem },
 
   watch: {
-    activeTab: function activeTab(newVal, oldVal) {
-
-    } },
+    activeTab: function activeTab(newVal, oldVal) {} },
 
   mixins: [_myMixins.default],
   onLoad: function () {var _onLoad = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(options) {var i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
@@ -340,6 +322,11 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
                 }
               }case 4:case "end":return _context.stop();}}}, _callee, this);}));function onLoad(_x) {return _onLoad.apply(this, arguments);}return onLoad;}(),
 
+  onPullDownRefresh: function onPullDownRefresh() {
+    setTimeout(function () {
+      uni.stopPullDownRefresh();
+    }, 1000);
+  },
   //上拉加载更多
   onReachBottom: function () {var _onReachBottom = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:if (!(
               this.activeTab != 0)) {_context2.next = 7;break;}if (!(
@@ -366,7 +353,23 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
     getRecommendList: function getRecommendList() {
       var that = this;
       _api.buziAPI.getRecommendList(function (res) {
-        that.recommendList = res.data;
+        that.recommendList = res.data;var _loop = function _loop(
+        i) {var _loop2 = function _loop2(
+          j) {
+            var src = that.recommendList[i].list[j].roomSrc;
+
+
+
+            that.recommendList[i].list[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+            uni.request({
+              url: src,
+              responseType: 'arraybuffer',
+              success: function success(res) {
+                that.recommendList[i].list[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+              } });};for (var j = 0; j < that.recommendList[i].list.length; j++) {_loop2(j);
+
+          }};for (var i = 0; i < that.recommendList.length; i++) {_loop(i);
+        }
       });
     },
     //获取分类详情
@@ -375,7 +378,22 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
       return new Promise(function (resolve, reject) {
         _api.buziAPI.getListDetail({ page: page, type: type }, function (res) {
           that.otherList = [].concat(_toConsumableArray(that.otherList), _toConsumableArray(res.data.list));
-          that.pageCount = res.data.pageCount;
+          that.pageCount = res.data.pageCount;var _loop3 = function _loop3(
+          j) {
+            var src = that.otherList[j].roomSrc;
+            console.log(that.otherList[j].roomSrc);
+
+
+
+            that.otherList[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+            uni.request({
+              url: src,
+              responseType: 'arraybuffer',
+              success: function success(res) {
+                that.otherList[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+              } });};for (var j = (page - 1) * 8; j < that.otherList.length; j++) {_loop3(j);
+
+          }
           resolve();
         });
       });
@@ -453,6 +471,10 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
     downloadApp: function downloadApp() {
       this.$localstorageFactory.set('download', true);
       this.$common.navigateTo('../video/video');
+    },
+    toSerach: function toSerach() {
+      this.$common.navigateTo('../serach/serach');
+      this.$localstorageFactory.remove('serach_val');
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

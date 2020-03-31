@@ -53,7 +53,7 @@
   padding: 10rpx;
 }
 .index .popup-center.data-v-1d944dd4 {
-    background: #CCC;
+    background: #fff;
 }
 .index .popup-center .popup-title.data-v-1d944dd4 {
       display: -webkit-box;
@@ -148,7 +148,7 @@
 }
 .index .index-header .index-title image.data-v-1d944dd4 {
         width: 140rpx;
-        height: 40rpx;
+        height: 80rpx;
 }
 .index .index-header .index-title .input.data-v-1d944dd4 {
         -webkit-box-flex: 1;
@@ -156,7 +156,8 @@
                 flex: 1;
         background: #f2f2f2;
         height: 60rpx;
-        padding: 0 0 0 30rpx;
+        padding: 0 30rpx;
+        margin-right: 30rpx;
         border-radius: 50rpx;
 }
 .index .index-header .index-title .pay.data-v-1d944dd4,

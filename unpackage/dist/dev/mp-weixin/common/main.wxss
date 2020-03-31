@@ -134,7 +134,7 @@
 }
 .index-swiper-center-center .list .room-src image {
       width: 350rpx;
-      height: 198rpx;
+      height: 197rpx;
       border-radius: 10rpx;
 }
 .index-swiper-center-center .list .room-name {

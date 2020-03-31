@@ -56,7 +56,7 @@
     position: fixed;
     top: 70rpx;
     border-bottom: none;
-    background: #FFF;
+    background: #fff;
     z-index: 1000;
 }
 .anchor .tab-item {

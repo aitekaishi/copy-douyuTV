@@ -8525,7 +8525,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@2.0.0-alpha-26320200304005","_id":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "enablePullDownRefresh": true, "onReachBottomDistance": 50, "usingComponents": { "s-tabs": "/components/s-tabs/index", "s-tab": "/components/s-tab/index", "uni-popup": "/components/uni-popup/uni-popup", "uni-icons": "/components/uni-icons/uni-icons", "uni-grid": "/components/uni-grid/uni-grid", "uni-grid-item": "/components/uni-grid-item/uni-grid-item" }, "usingAutoImportComponents": { "uni-popup": "/components/uni-popup/uni-popup", "uni-icons": "/components/uni-icons/uni-icons" } }, "pages/anchor/anchor": { "enablePullDownRefresh": true, "onReachBottomDistance": 50, "usingComponents": { "serach-input": "/components/serach-input/serach-input", "uni-grid": "/components/uni-grid/uni-grid", "uni-grid-item": "/components/uni-grid-item/uni-grid-item" }, "usingAutoImportComponents": { "serach-input": "/components/serach-input/serach-input", "uni-grid": "/components/uni-grid/uni-grid", "uni-grid-item": "/components/uni-grid-item/uni-grid-item" } }, "pages/serach/serach": { "enablePullDownRefresh": true, "onReachBottomDistance": 50, "usingComponents": { "serach-input": "/components/serach-input/serach-input" }, "usingAutoImportComponents": { "serach-input": "/components/serach-input/serach-input" } }, "pages/video/video": { "enablePullDownRefresh": true, "onReachBottomDistance": 50, "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "enablePullDownRefresh": true, "onReachBottomDistance": 50 }, "pages/anchor/anchor": { "enablePullDownRefresh": true, "onReachBottomDistance": 50 }, "pages/serach/serach": { "enablePullDownRefresh": true, "onReachBottomDistance": 50 }, "pages/video/video": { "enablePullDownRefresh": true, "onReachBottomDistance": 50 } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
@@ -8536,7 +8536,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "" };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__551ACF5" };exports.default = _default;
 
 /***/ }),
 /* 9 */,
@@ -10716,6 +10716,22 @@ var _default = {
         mask: true });
 
       this.$common.navigateTo('../video/video?roomId=' + item.rid);
+    },
+    //占位图
+    placeholderChart: function placeholderChart(imgSrc) {
+      console.log(imgSrc);
+      var src = imgSrc;
+
+
+
+      imgSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+      uni.request({
+        url: src,
+        responseType: 'arraybuffer',
+        success: function success(res) {
+          imgSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+        } });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
