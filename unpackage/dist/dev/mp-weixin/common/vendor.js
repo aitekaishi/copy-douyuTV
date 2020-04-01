@@ -241,9 +241,11 @@ var promiseInterceptor = {
 
 
 var SYNC_API_RE =
-/^\$|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
+/^\$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
+
+var ASYNC_API = ['createBLEConnection'];
 
 var CALLBACK_API_RE = /^on/;
 
@@ -251,7 +253,7 @@ function isContextApi(name) {
   return CONTEXT_API_RE.test(name);
 }
 function isSyncApi(name) {
-  return SYNC_API_RE.test(name);
+  return SYNC_API_RE.test(name) && ASYNC_API.indexOf(name) === -1;
 }
 
 function isCallbackApi(name) {
@@ -276,6 +278,19 @@ function shouldPromise(name) {
   return true;
 }
 
+/* eslint-disable no-extend-native */
+if (!Promise.prototype.finally) {
+  Promise.prototype.finally = function (callback) {
+    var promise = this.constructor;
+    return this.then(
+    function (value) {return promise.resolve(callback()).then(function () {return value;});},
+    function (reason) {return promise.resolve(callback()).then(function () {
+        throw reason;
+      });});
+
+  };
+}
+
 function promisify(name, api) {
   if (!shouldPromise(name)) {
     return api;
@@ -289,18 +304,6 @@ function promisify(name, api) {
         success: resolve,
         fail: reject })].concat(
       params));
-      /* eslint-disable no-extend-native */
-      if (!Promise.prototype.finally) {
-        Promise.prototype.finally = function (callback) {
-          var promise = this.constructor;
-          return this.then(
-          function (value) {return promise.resolve(callback()).then(function () {return value;});},
-          function (reason) {return promise.resolve(callback()).then(function () {
-              throw reason;
-            });});
-
-        };
-      }
     })));
   };
 }
@@ -8514,7 +8517,7 @@ main();
 /*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-module.exports = {"_from":"@dcloudio/uni-stat@2.0.0-alpha-26320200304005","_id":"@dcloudio/uni-stat@2.0.0-alpha-26320200304005","_inBundle":false,"_integrity":"sha512-MRGMdXcs4VyliJXFrfBJMSpE7KKphnWQOsmhEHfYlxysU5xb7fD9VcWqzZSP05O2XjwiinDmMah1P0WQAbOv1g==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"@dcloudio/uni-stat@2.0.0-alpha-26320200304005","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"2.0.0-alpha-26320200304005","saveSpec":null,"fetchSpec":"2.0.0-alpha-26320200304005"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-alpha-26320200304005.tgz","_shasum":"4d5bbd18fc8312453c6a30d1ca2ac4afec39b69e","_spec":"@dcloudio/uni-stat@2.0.0-alpha-26320200304005","_where":"/Users/guoshengqiang/Documents/dcloud-plugins-new/alpha/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"2c63c817259209b961dde5b8e5702bb599b2c603","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-alpha-26320200304005"};
+module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2.0.0-alpha-26720200326002","_inBundle":false,"_integrity":"sha512-SqBLYe4WLgejywVsjqhzDui4msF3UkmpYzYvs8B4AZuCLKfBZXh2pHO2BOfAGlI3sTok2ryMfM1nPKDxLUINOA==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@alpha","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"alpha","saveSpec":null,"fetchSpec":"alpha"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-alpha-26720200326002.tgz","_shasum":"d2f51a9669a057883f3552f6a0ea4a2a8a48ea9c","_spec":"@dcloudio/uni-stat@alpha","_where":"/Users/guoshengqiang/Documents/dcloud-plugins/alpha/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"7b266e20fce9373ef0387b40ce15109e25e14d1d","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-alpha-26720200326002"};
 
 /***/ }),
 /* 7 */
@@ -8579,7 +8582,15 @@ function normalizeComponent (
 
   // fixed by xxxxxx auto components
   if (components) {
-    options.components = Object.assign(components, options.components || {})
+    if (!options.components) {
+      options.components = {}
+    }
+    var hasOwn = Object.prototype.hasOwnProperty
+    for (var name in components) {
+      if (hasOwn.call(components, name) && !hasOwn.call(options.components, name)) {
+        options.components[name] = components[name]
+      }
+    }
   }
   // fixed by xxxxxx renderjs
   if (renderjs) {
@@ -8772,6 +8783,21 @@ var _default =
       3600 - minutes * 60 : '0' + (Math.floor(newDate / 1000) - hours * 3600 - minutes * 60);
       time = "".concat(hours, ":").concat(minutes, ":").concat(seconds);
     }, 1000);
+  },
+  //占位图
+  placeholderChart: function placeholderChart(obj, imgSrc) {
+    var src = obj[imgSrc];
+
+
+
+    obj[imgSrc] = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+    uni.request({
+      url: src,
+      responseType: 'arraybuffer',
+      success: function success(res) {
+        obj[imgSrc] = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+      } });
+
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
@@ -10701,14 +10727,26 @@ var _default = {
   },
   watch: {
     val: function val(newVal, oldVal) {
-      console.log(newVal);
+      this.$localstorageFactory.set('serach_val', newVal);
     } },
 
+  onPullDownRefresh: function onPullDownRefresh() {
+    setTimeout(function () {
+      uni.stopPullDownRefresh();
+      uni.showToast({
+        title: '加载完成',
+        icon: 'none' });
+
+
+    }, 1000);
+  },
   methods: {
     //搜索主播
     serachName: function serachName(item) {
-      this.$localstorageFactory.set('serach_val', item);
-      this.$common.navigateTo('../anchor/anchor?name=' + item);
+      if (item) {
+        this.$localstorageFactory.set('serach_val', item);
+      }
+      this.$common.navigateTo('../anchor/anchor?name=' + this.$localstorageFactory.get('serach_val'));
     },
     toVideo: function toVideo(item) {
       uni.showLoading({
@@ -10716,22 +10754,6 @@ var _default = {
         mask: true });
 
       this.$common.navigateTo('../video/video?roomId=' + item.rid);
-    },
-    //占位图
-    placeholderChart: function placeholderChart(imgSrc) {
-      console.log(imgSrc);
-      var src = imgSrc;
-
-
-
-      imgSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
-      uni.request({
-        url: src,
-        responseType: 'arraybuffer',
-        success: function success(res) {
-          imgSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
-        } });
-
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

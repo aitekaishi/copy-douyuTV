@@ -66,6 +66,9 @@
 				}
 				.nick-name {
 					@include relative(-60upx, 0, 0, 10upx);
+					/* #ifndef MP-WEIXIN */
+					@include relative(-70upx, 0, 0, 10upx);
+					/* #endif */
 					text-align: left;
 				}
 				.room-src {

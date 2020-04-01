@@ -46,5 +46,19 @@ export default {
 			time = `${hours}:${minutes}:${seconds}`;
 		}, 1000);
 	},
-	
+	//占位图
+	placeholderChart(obj,imgSrc) {
+		let src = obj[imgSrc];
+		// #ifdef H5
+		src = obj[imgSrc].replace('https://rpic.douyucdn.cn/', '/rpic/')
+		// #endif
+		obj[imgSrc] = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+		uni.request({
+			url: src,
+			responseType: 'arraybuffer',
+			success: res => {
+				obj[imgSrc] = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
+			}
+		});
+	}
 }

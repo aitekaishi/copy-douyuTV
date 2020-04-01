@@ -53,5 +53,6 @@
     width: 70rpx;
     margin-left: 20rpx;
     font-size: 28rpx !important;
+    color: red;
 }
 

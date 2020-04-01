@@ -51,8 +51,6 @@ var component = Object(_mySoftWare_HBuilderX_plugins_uniapp_cli_node_modules_dcl
   renderjs
 )
 
-/* hot reload */
-if (false) { var api; }
 component.options.__file = "myProjects/copy-douyuTV/pages/video/video.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 

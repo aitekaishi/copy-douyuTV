@@ -120,7 +120,6 @@
     z-index: 100;
 }
 .index .index-header .index-title.data-v-1d944dd4 {
-      padding: 10rpx;
       display: -webkit-box;
       display: flex;
       display: -webkit-flex;
@@ -130,9 +129,8 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
               align-items: center;
-      height: 70rpx;
+      height: 80rpx;
       font-size: 24rpx;
-      margin-bottom: 40rpx;
 }
 .index .index-header .index-title view.data-v-1d944dd4 {
         margin: 0 10rpx;
@@ -157,7 +155,7 @@
         background: #f2f2f2;
         height: 60rpx;
         padding: 0 30rpx;
-        margin-right: 30rpx;
+        margin-right: 60rpx;
         border-radius: 50rpx;
 }
 .index .index-header .index-title .pay.data-v-1d944dd4,
@@ -193,11 +191,6 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
               align-items: center;
-      position: relative;
-      top: -50rpx;
-      right: auto;
-      bottom: auto;
-      left: auto;
 }
 .index .index-header .index-swiper .index-swiper-left.data-v-1d944dd4 {
         width: 85vw;
@@ -207,7 +200,7 @@
         height: 15vw;
 }
 .index .space.data-v-1d944dd4 {
-    height: 230rpx;
+    height: 200rpx;
 }
 .index .index-swiper-center .index-swiper-center-title.data-v-1d944dd4 {
     margin: 10rpx 0;

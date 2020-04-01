@@ -36,8 +36,6 @@ var component = Object(_mySoftWare_HBuilderX_plugins_uniapp_cli_node_modules_dcl
   renderjs
 )
 
-/* hot reload */
-if (false) { var api; }
 component.options.__file = "myProjects/copy-douyuTV/components/uni-popup/uni-popup.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
@@ -119,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniTransition = function uniTransition() {return __webpack_require__.e(/*! import() | components/uni-transition/uni-transition */ "components/uni-transition/uni-transition").then(__webpack_require__.bind(null, /*! ../uni-transition/uni-transition.vue */ 109));};
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniTransition = function uniTransition() {__webpack_require__.e(/*! require.ensure | components/uni-transition/uni-transition */ "components/uni-transition/uni-transition").then((function () {return resolve(__webpack_require__(/*! ../uni-transition/uni-transition.vue */ 109));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
@@ -134,17 +132,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 /**
-                                                                                                                                                                                                                                                                             * PopUp 弹出层
-                                                                                                                                                                                                                                                                             * @description 弹出层组件，为了解决遮罩弹层的问题
-                                                                                                                                                                                                                                                                             * @tutorial https://ext.dcloud.net.cn/plugin?id=329
-                                                                                                                                                                                                                                                                             * @property {String} type = [top|center|bottom] 弹出方式
-                                                                                                                                                                                                                                                                             * 	@value top 顶部弹出
-                                                                                                                                                                                                                                                                             * 	@value center 中间弹出
-                                                                                                                                                                                                                                                                             * 	@value bottom 底部弹出
-                                                                                                                                                                                                                                                                             * @property {Boolean} animation = [ture|false] 是否开启动画
-                                                                                                                                                                                                                                                                             * @property {Boolean} maskClick = [ture|false] 蒙版点击是否关闭弹窗
-                                                                                                                                                                                                                                                                             * @event {Function} change 打开关闭弹窗触发，e={show: false}
-                                                                                                                                                                                                                                                                             */var _default =
+                                                                                                                                                                                                                                                                                                     * PopUp 弹出层
+                                                                                                                                                                                                                                                                                                     * @description 弹出层组件，为了解决遮罩弹层的问题
+                                                                                                                                                                                                                                                                                                     * @tutorial https://ext.dcloud.net.cn/plugin?id=329
+                                                                                                                                                                                                                                                                                                     * @property {String} type = [top|center|bottom] 弹出方式
+                                                                                                                                                                                                                                                                                                     * 	@value top 顶部弹出
+                                                                                                                                                                                                                                                                                                     * 	@value center 中间弹出
+                                                                                                                                                                                                                                                                                                     * 	@value bottom 底部弹出
+                                                                                                                                                                                                                                                                                                     * @property {Boolean} animation = [ture|false] 是否开启动画
+                                                                                                                                                                                                                                                                                                     * @property {Boolean} maskClick = [ture|false] 蒙版点击是否关闭弹窗
+                                                                                                                                                                                                                                                                                                     * @event {Function} change 打开关闭弹窗触发，e={show: false}
+                                                                                                                                                                                                                                                                                                     */var _default =
 
 {
   name: 'UniPopup',

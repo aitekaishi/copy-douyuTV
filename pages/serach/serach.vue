@@ -54,11 +54,11 @@ export default {
 @import '../../uni.scss';
 .serach {
 	padding: 20upx;
-	/* #ifndef MP-WEIXIN */
-	padding-top: 60upx;
-	/* #endif */
 	.serach-center{
 		margin-top: 60upx;
+		/* #ifdef APP-PLUS */
+		margin-top: 120upx;
+		/* #endif */
 	}
 	.title {
 		font-weight: 600;

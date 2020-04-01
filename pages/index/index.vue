@@ -173,11 +173,6 @@ export default {
 			}
 		}
 	},
-	onPullDownRefresh() {
-		setTimeout(function() {
-			uni.stopPullDownRefresh();
-		}, 1000);
-	},
 	//上拉加载更多
 	async onReachBottom() {
 		if (this.activeTab != 0) {
@@ -201,24 +196,13 @@ export default {
 			});
 		},
 		//获取分类内容
-		getRecommendList() {
+		getRecommendList () {
 			let that = this;
 			buziAPI.getRecommendList(res => {
 				that.recommendList = res.data;
 				for (let i = 0; i < that.recommendList.length; i++) {
 					for (let j = 0; j < that.recommendList[i].list.length; j++) {
-						let src = that.recommendList[i].list[j].roomSrc;
-						// #ifdef H5
-						src = that.recommendList[i].list[j].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
-						// #endif
-						that.recommendList[i].list[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
-						uni.request({
-							url: src,
-							responseType: 'arraybuffer',
-							success: res => {
-								that.recommendList[i].list[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
-							}
-						});
+						that.$common.placeholderChart(that.recommendList[i].list[j],'roomSrc')
 					}
 				}
 			});
@@ -231,19 +215,7 @@ export default {
 					that.otherList = [...that.otherList, ...res.data.list];
 					that.pageCount = res.data.pageCount;
 					for (let j = (page - 1) * 8; j < that.otherList.length; j++) {
-						let src = that.otherList[j].roomSrc;
-						console.log(that.otherList[j].roomSrc);
-						// #ifdef H5
-						src = that.otherList[j].roomSrc.replace('https://rpic.douyucdn.cn/', '/rpic/');
-						// #endif
-						that.otherList[j].roomSrc = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
-						uni.request({
-							url: src,
-							responseType: 'arraybuffer',
-							success: res => {
-								that.otherList[j].roomSrc = 'data:image/jpeg;base64,' + uni.arrayBufferToBase64(res.data);
-							}
-						});
+						that.$common.placeholderChart(that.otherList[j],'roomSrc')
 					}
 					resolve();
 				});
@@ -387,17 +359,15 @@ export default {
 	.index-header {
 		position: fixed;
 		top: 0;
-		/* #ifndef MP-WEIXIN */
+		/* #ifdef APP-PLUS */
 		padding-top: 60upx;
 		/* #endif */
 		background: #fff;
 		z-index: 100;
 		.index-title {
-			padding: 10upx;
 			@include flex();
-			height: 70upx;
+			height: 80upx;
 			font-size: $uni-font-size-sm;
-			margin-bottom: 40upx;
 			view {
 				margin: 0 10upx;
 				@include flex();
@@ -410,7 +380,7 @@ export default {
 				background: #f2f2f2;
 				height: 60upx;
 				padding: 0 30upx;
-				margin-right: 30upx;
+				margin-right: 60upx;
 				@include borderRadius(50upx);
 			}
 			.pay,
@@ -431,7 +401,6 @@ export default {
 		}
 		.index-swiper {
 			@include flex();
-			@include relative(-50upx);
 			.index-swiper-left {
 				width: 85vw;
 			}
@@ -443,9 +412,9 @@ export default {
 		}
 	}
 	.space {
-		height: 230upx;
+		height: 200upx;
 		/* #ifndef MP-WEIXIN */
-		height: 290upx;
+		height: 260upx;
 		/* #endif */
 	}
 	.index-swiper-center {

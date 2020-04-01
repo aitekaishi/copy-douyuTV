@@ -41,8 +41,8 @@
 		margin: 15upx 0;
 		position: fixed;
 		top: -15upx;
-		/* #ifndef MP-WEIXIN */
-		top: 30upx;
+		/* #ifdef APP-PLUS */
+		padding-top: 50upx;
 		/* #endif */
 		height: 80upx;
 		background: #FFF;
@@ -57,6 +57,7 @@
 			width: 70upx;
 			margin-left: 20upx;
 			font-size: $uni-font-size-base !important;
+			color: red                                            ;
 		}
 	}
 </style>

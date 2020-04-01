@@ -53,8 +53,6 @@ var component = Object(_mySoftWare_HBuilderX_plugins_uniapp_cli_node_modules_dcl
   renderjs
 )
 
-/* hot reload */
-if (false) { var api; }
 component.options.__file = "myProjects/copy-douyuTV/pages/serach/serach.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
@@ -185,7 +183,7 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
 //
 //
 //
-var serachInput = function serachInput() {return __webpack_require__.e(/*! import() | components/serach-input/serach-input */ "components/serach-input/serach-input").then(__webpack_require__.bind(null, /*! @/components/serach-input/serach-input */ 102));};var _default = { data: function data() {return { todayTopListTop: [], todayTopListBottom: [] };}, components: { serachInput: serachInput }, mixins: [_myMixins.default], onLoad: function onLoad() {var that = this;that.$localstorageFactory.set('activeIndex', 0);_api.buziAPI.getTodayTop(function (res) {that.todayTopListTop = res.data.slice(0, 5);that.todayTopListBottom = res.data.slice(5, 10);});}, methods: {} };exports.default = _default;
+var serachInput = function serachInput() {__webpack_require__.e(/*! require.ensure | components/serach-input/serach-input */ "components/serach-input/serach-input").then((function () {return resolve(__webpack_require__(/*! @/components/serach-input/serach-input */ 102));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { todayTopListTop: [], todayTopListBottom: [] };}, components: { serachInput: serachInput }, mixins: [_myMixins.default], onLoad: function onLoad() {var that = this;that.$localstorageFactory.set('activeIndex', 0);_api.buziAPI.getTodayTop(function (res) {that.todayTopListTop = res.data.slice(0, 5);that.todayTopListBottom = res.data.slice(5, 10);});}, methods: {} };exports.default = _default;
 
 /***/ }),
 
