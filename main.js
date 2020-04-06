@@ -4,6 +4,7 @@ import './uni.scss'
 import './weui.css'
 import filters from '@/filters/common.js'
 import CommonUtils from '@/common/common.js'
+import moment from '@/common/SDK/moment.js'
 import localstorageFactory from '@/common/localstorage.factory.js'
 import store from './store'
 
@@ -14,6 +15,7 @@ Object.keys(filters).forEach(key => {
 //定义成全局组件
 Vue.prototype.$store = store
 Vue.prototype.$common = CommonUtils
+Vue.prototype.$moment = moment
 Vue.prototype.$localstorageFactory = localstorageFactory
 Vue.config.productionTip = false
 
