@@ -52,7 +52,7 @@ export default {
 		// #ifdef H5
 		src = obj[imgSrc].replace('https://rpic.douyucdn.cn/', '/rpic/')
 		// #endif
-		obj[imgSrc] = 'https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/list-item-def-thumb_b10bbe8.png';
+		obj[imgSrc] = '/static/douyu-background.png';
 		uni.request({
 			url: src,
 			responseType: 'arraybuffer',

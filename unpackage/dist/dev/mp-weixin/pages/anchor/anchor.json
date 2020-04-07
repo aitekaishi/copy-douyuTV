@@ -1,7 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "onReachBottomDistance": 50,
-  "usingComponents": {
-    "serach-input": "/components/serach-input/serach-input"
-  }
-}

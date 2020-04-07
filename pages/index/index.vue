@@ -2,10 +2,10 @@
 	<view class="index">
 		<view class="index-header">
 			<view class="index-title">
-				<view @click="$common.navigateTo('../index/index')" class="img">
+				<view v-if="swiperList.length" @click="$common.navigateTo('../index/index')" class="img">
 					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png" mode="widthFix"></image>
 				</view>
-				<view @click="toSerach()" class="input"><input type="text" v-model="serachVal" placeholder="搜索" /></view>
+				<view v-if="swiperList.length" @click="toSerach()" class="input"><input type="text" v-model="serachVal" placeholder="搜索" /></view>
 				<!-- <view class="pay">充值</view>
 				<view class="open-app">打开APP</view> -->
 			</view>
@@ -16,7 +16,7 @@
 						<s-tab v-for="(item, index) in swiperList" :key="index">{{ item.name }}</s-tab>
 					</s-tabs>
 				</view>
-				<view @click="catePopup" class="index-swiper-right">
+				<view v-if="swiperList.length" @click="catePopup" class="index-swiper-right">
 					<image lazy-load src="https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png" mode="widthFix"></image>
 				</view>
 			</view>

@@ -120,7 +120,6 @@ if (typeof plus !== 'undefined') {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 
 if (typeof Promise !== 'undefined' && !Promise.prototype.finally) {
   Promise.prototype.finally = function (callback) {
@@ -236,55 +235,59 @@ var render = function() {
             "v-uni-view",
             { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
             [
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(3, "sc"),
-                  attrs: { _i: 3 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [
-                  _c("v-uni-image", {
-                    attrs: {
-                      "lazy-load": true,
-                      src:
-                        "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png",
-                      mode: "widthFix",
-                      _i: 4
-                    }
-                  })
-                ],
-                1
-              ),
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(5, "sc"),
-                  attrs: { _i: 5 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [
-                  _c("v-uni-input", {
-                    attrs: { type: "text", placeholder: "搜索", _i: 6 },
-                    model: {
-                      value: _vm._$g(6, "v-model"),
-                      callback: function($$v) {
-                        _vm.$handleVModelEvent(6, $$v)
-                      },
-                      expression: "serachVal"
-                    }
-                  })
-                ],
-                1
-              )
+              _vm._$g(3, "i")
+                ? _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(3, "sc"),
+                      attrs: { _i: 3 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [
+                      _c("v-uni-image", {
+                        attrs: {
+                          "lazy-load": true,
+                          src:
+                            "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_864f3ef.png",
+                          mode: "widthFix",
+                          _i: 4
+                        }
+                      })
+                    ],
+                    1
+                  )
+                : _vm._e(),
+              _vm._$g(5, "i")
+                ? _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(5, "sc"),
+                      attrs: { _i: 5 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [
+                      _c("v-uni-input", {
+                        attrs: { type: "text", placeholder: "搜索", _i: 6 },
+                        model: {
+                          value: _vm._$g(6, "v-model"),
+                          callback: function($$v) {
+                            _vm.$handleVModelEvent(6, $$v)
+                          },
+                          expression: "serachVal"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                : _vm._e()
             ],
             1
           ),
@@ -328,30 +331,32 @@ var render = function() {
                 ],
                 1
               ),
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(12, "sc"),
-                  attrs: { _i: 12 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [
-                  _c("v-uni-image", {
-                    attrs: {
-                      "lazy-load": true,
-                      src:
-                        "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png",
-                      mode: "widthFix",
-                      _i: 13
-                    }
-                  })
-                ],
-                1
-              )
+              _vm._$g(12, "i")
+                ? _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(12, "sc"),
+                      attrs: { _i: 12 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [
+                      _c("v-uni-image", {
+                        attrs: {
+                          "lazy-load": true,
+                          src:
+                            "https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/category_0148919.png",
+                          mode: "widthFix",
+                          _i: 13
+                        }
+                      })
+                    ],
+                    1
+                  )
+                : _vm._e()
             ],
             1
           )
