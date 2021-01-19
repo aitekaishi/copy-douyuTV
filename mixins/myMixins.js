@@ -2,7 +2,7 @@ export default {
 	data() {
 		return {
 			val: '', //搜索插件input值
-			loading: false,// 是否正在加载吗
+			loading: false,// 是否正在加载吗好的
 		}
 
 	},
