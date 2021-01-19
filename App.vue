@@ -4,19 +4,19 @@
  * @Author: Liu_Pan
  * @Date: 2021-01-06 16:54:57
  * @LastEditors: Liu_Pan
- * @LastEditTime: 2021-01-06 17:02:29
+ * @LastEditTime: 2021-01-19 09:55:57
 -->
 <script>
 export default {
-  // onLaunch: function() {
-  // 	console.log('App Launch')
-  // },
-  // onShow: function() {
-  // 	console.log('App Show')
-  // },
-  // onHide: function() {
-  // 	console.log('App Hide')
-  // }
+  onLaunch: function () {
+    console.log('App Launch')
+  },
+  onShow: function () {
+    console.log('App Show')
+  },
+  onHide: function () {
+    console.log('App Hide')
+  }
 }
 </script>
 
