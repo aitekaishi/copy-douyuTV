@@ -4,13 +4,13 @@
  * @Author: Liu_Pan
  * @Date: 2021-01-06 16:54:57
  * @LastEditors: Liu_Pan
- * @LastEditTime: 2021-01-19 09:58:20
+ * @LastEditTime: 2021-01-19 10:01:06
  */
 export default {
 	data() {
 		return {
 			val: '', //搜索插件input值
-			loading: false,// 是否正在加载1
+			loading: false,// 是否正在加载
 		}
 
 	},
